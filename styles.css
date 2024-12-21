@@ -265,7 +265,7 @@ body {
     display: flex;
     align-items: center;
     padding: 15px 0;
-    border-bottom: 1px solid #e5e5e5;
+    
 }
 
 .item-image img {
@@ -565,17 +565,38 @@ input[disabled] {
 }
  
 
-/* Адаптация для устройств шириной до 1080px (например, 2460x1080) */
-@media (max-width: 596px) {
+
+
+
+
+
+
+
+
+
+@media (max-width: 1080px) {
+
   .table-cart__header {
     display: none;
   }
+  .clear-cart {
+    
+    justify-content: flex-end;
+    font-size: 14px;
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+   /* margin-left: 820px; /* Сдвигаем элемент вправо */
+    text-align: right; /* Выравнивание текста */
+    padding: 5px 10px; /* Устанавливаем отступы для нормального клика */
+    margin-bottom: 15px; /* Отступ между заголовками и содержимым */
+}
   body {
       padding: 20px; /* Уменьшаем отступы для удобства */
   }
 
   .cart {
-      
+      max-width: 70%; /* Растягиваем корзину на весь экран */
       padding: 15px; /* Уменьшаем внутренние отступы */
       box-shadow: none; /* Убираем лишние тени для простоты */
   }
@@ -594,7 +615,7 @@ input[disabled] {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  flex: 0 1000px 10px; /* Устанавливаем фиксированную ширину для .item-image (например, 150px) */
+ 
 }
 
 .cart-item .item-image,
@@ -602,7 +623,7 @@ input[disabled] {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  flex: 1 1 ; /* Два элемента на одной строке */
+  
   
 }
 
@@ -675,49 +696,5 @@ input[disabled] {
 
   .checkout-btn:hover {
       background-color: #444; /* Легкое изменение фона при наведении */
-  }
-}
-
-
-
-
-
-@media (max-width: 1080px) {
-  .table-cart__header {
-      display: none;
-  }
-
-  .clear-cart {
-      justify-content: flex-end;
-      font-size: 12px;  /* Меньший размер шрифта для маленьких экранов */
-      color: #888;      /* Светлый цвет */
-      padding: 4px 8px; /* Уменьшаем отступы */
-      margin-bottom: 10px; /* Меньше отступов */
-  }
-
-  .cart {
-      
-      padding: 15px;  /* Уменьшаем внутренние отступы */
-      box-shadow: none; /* Убираем лишнюю тень */
-  }
-
-  .cart-item {
-      flex-direction: column; /* Переключаемся на вертикальное расположение */
-  }
-
-  .cart-item .item-image,
-  .cart-item .item-details {
-      width: 100%;  /* Для мобильных экранов изображения и детали по ширине */
-  }
-
-  .summary-row {
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-      gap: 0.5rem;
-  }
-
-  .checkout-btn {
-      width: 100%; /* Кнопка на всю ширину */
   }
 }
