@@ -567,14 +567,7 @@ input[disabled] {
 
 
 
-
-
-
-
-
-
-
-@media (max-width: 1080px) {
+@media (max-width: 430px) {
 
   .table-cart__header {
     display: none;
@@ -726,6 +719,189 @@ input[disabled] {
       text-align: start; /* Центрируем текст */
       font-size: 1rem; /* Уменьшаем общий размер текста */
       gap: 12.5rem; /* Добавляем отступы между строками */
+      margin-bottom: 10px;
+  }
+
+  .total-price {
+      font-size: 1.25rem; /* Выделяем текст суммы */
+  }
+
+  .checkout-btn {
+      width: 100%; /* Кнопка на всю ширину */
+      font-size: 1rem;
+      padding: 10px;
+      
+      justify-content: center;
+      text-align: center;
+      background-color: #000;
+      color: #fff;
+  }
+
+  .checkout-btn:hover {
+      background-color: #444; /* Легкое изменение фона при наведении */
+  }
+}
+
+
+
+
+@media (max-width: 390px){
+
+  .table-cart__header {
+    display: none;
+  }
+  .clear-cart {
+    
+    justify-content: flex-end;
+    font-size: 14px;
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+   /* margin-left: 820px; /* Сдвигаем элемент вправо */
+    text-align: right; /* Выравнивание текста */
+    padding: 5px 10px; /* Устанавливаем отступы для нормального клика */
+    
+}
+.item-quantity::after {
+  content: "="; /* Добавляем знак = */
+  display: inline-block;
+ 
+  font-size: 12px; /* Размер знака */
+  color: #333; /* Цвет знака */
+  position: relative;
+}
+.item-quantity, .item-packs{
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    padding: 5px;
+    max-width: 145px;
+}
+button.quantity-btn {
+  all: unset;
+  /* cursor: pointer; */
+  padding: 0 15px;
+  font-size: 18px;
+  text-align: center;
+}
+  body {
+      padding: 20px; /* Уменьшаем отступы для удобства */
+  }
+
+  .cart {
+      max-width: 90%; /* Растягиваем корзину на весь экран */
+      padding: 10px; /* Уменьшаем внутренние отступы */
+      box-shadow: none; /* Убираем лишние тени для простоты */
+  }
+  .cart-title {
+    font-size: 24px;
+    
+}
+.cart-item {
+  display: flex;
+  flex-wrap: wrap; /* Разрешить перенос элементов на новую строку */
+  gap: 10px; /* Расстояние между элементами */
+  
+  padding: 5px;
+}
+.cart-item .item-image {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+ 
+}
+
+.cart-item .item-image img {
+  max-width: 100%; /* Сделать изображение адаптивным */
+  height: auto;
+}
+.item-details h3 {
+  font-size: 16px;
+  margin-bottom: 5px;
+  text-align: justify; /* Выравнивание текста по ширине */
+}
+
+/*сделать отдельно*/
+
+
+
+.cart-item .remove-item {
+  font-size: 31px;
+  display: flex;
+  justify-content: right; /* Выравнивание элементов по центру */
+  align-items: right;
+  text-align: right;
+  
+}
+.cart-item .item-total{
+  display: flex;
+  justify-content: left; /* Выравнивание элементов по центру */
+}
+.cart-item .item-price{
+  flex: 1 1 100%; /* Все остальные элементы занимают всю строку */
+  display: flex;
+  justify-content: left; /* Выравнивание элементов по центру */
+  margin-bottom: 10px;
+}
+.cart-item .item-controls {
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* Выравнивание по вертикали */
+  justify-content: center; /* Центрирование содержимого по горизонтали */
+  gap: 10px; /* Расстояние между кнопками */
+  max-width: 100%; /* Запрещаем вылезать за пределы контейнера */
+  box-sizing: border-box; /* Учитываем отступы и границы в общей ширине */
+  
+}
+/* Упорядочиваем элементы */
+.cart-item .item-image {
+  order: 1; /* Первыми отображаются изображения */
+}
+
+.cart-item .item-details {
+   
+  order: 2; /* Затем детали */
+}
+
+.cart-item .item-price {
+  order: 3; /* Цена идет на новой строке */
+}
+
+.cart-item .item-controls {
+  order: 4; /* Управление количеством ниже */
+}
+
+.cart-item .item-total {
+  order: 5; /* Итоговая сумма */
+}
+
+.cart-item .remove-item {
+  order: 2; /* Кнопка удаления в самом низу */
+}
+.delivery-note {
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 15px;
+  
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 15px;
+    max-width: 150px; /* Устанавливаем максимальную ширину блока */
+    line-height: 1.5; /* Делаем строки более читаемыми */
+    word-wrap: break-word; /* Разрешаем перенос слов, если они слишком длинные */
+    text-align: left; /* Текст выравнивается по левому краю */
+    
+    
+   
+
+}
+  .summary-row {
+      display: flex;
+      text-align: start; /* Центрируем текст */
+      font-size: 1rem; /* Уменьшаем общий размер текста */
+      gap: 10rem; /* Добавляем отступы между строками */
       margin-bottom: 10px;
   }
 
