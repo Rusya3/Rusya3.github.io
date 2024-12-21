@@ -565,73 +565,74 @@ input[disabled] {
 /* 
 
 /* Общие стили для мобильных устройств */
+@media (max-width: 1200px) {
+    body {
+        padding: 2.5rem; /* Уменьшаем общий отступ */
+    }
+
+    .table-cart__header {
+        flex-direction: column; /* Переключаем на колонку */
+        gap: 1.5rem; /* Добавляем отступы между элементами */
+    }
+
+    .cart-item {
+        flex-direction: column; /* Элементы располагаются в колонку */
+        gap: 1.5rem; /* Отступ между элементами */
+        padding-bottom: 1rem; /* Уменьшаем внутренние отступы */
+    }
+
+    .cart-item .item-details, 
+    .cart-item .item-price, 
+    .cart-item .item-controls, 
+    .cart-item .item-total {
+        text-align: center; /* Центрируем текст */
+    }
+
+    .cart-item .remove-item {
+        position: absolute; /* Фиксируем позицию кнопки */
+        right: 0.5rem;
+        top: 0.5rem;
+    }
+}
+
+@media (max-width: 991px) {
+    .contact-info h1 {
+        font-size: 1.875rem; /* Уменьшаем заголовок */
+    }
+
+    .table-cart__header div {
+        font-size: 0.875rem; /* Уменьшаем размер текста заголовков */
+    }
+
+    .cart-item {
+        gap: 1rem; /* Уменьшаем отступы между элементами */
+    }
+
+    .map {
+        height: 20rem; /* Уменьшаем высоту карты */
+    }
+}
+
 @media (max-width: 576px) {
-  /* Добавляем горизонтальную прокрутку */
-  .cart {
-      overflow-x: auto; /* Включаем горизонтальную прокрутку */
-      white-space: nowrap; /* Сохраняем элементы в одну строку */
-  }
+    body {
+        padding: 1rem; /* Минимальные отступы для маленьких экранов */
+    }
 
-  /* Сохраняем табличное расположение заголовков */
-  .table-cart__header {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr; /* 4 равные колонки */
-      gap: 0.5rem; /* Отступы между колонками */
-      width: 800px; /* Ширина контейнера для скролла */
-  }
+    .table-cart__header {
+        font-size: 0.75rem; /* Уменьшаем текст заголовков */
+    }
 
-  /* Сохраняем табличное расположение товаров */
-  .cart-item {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr; /* 4 равные колонки */
-      gap: 0.5rem; /* Отступы между колонками */
-      width: 800px; /* Ширина контейнера для скролла */
-  }
+    .cart-item {
+        gap: 0.5rem; /* Минимальные отступы между элементами */
+    }
 
-  /* Настройка колонок внутри товаров */
-  .cart-item .item-image {
-      grid-column: 1 / 2; /* Изображение в первой колонке */
-  }
+    .map {
+        height: 15rem; /* Компактная высота карты */
+    }
 
-  .cart-item .item-details {
-      grid-column: 2 / 3; /* Детали товара во второй колонке */
-  }
-
-  .cart-item .item-price {
-      grid-column: 3 / 4; /* Цена в третьей колонке */
-  }
-
-  .cart-item .item-controls {
-      grid-column: 4 / 5; /* Управление количеством в четвертой колонке */
-  }
-
-  .cart-item .item-total {
-      grid-column: 5 / 6; /* Итоговая сумма в пятой колонке */
-  }
-
-  .cart-item .remove-item {
-      grid-column: 6 / 7; /* Кнопка удаления в шестой колонке */
-  }
-
-  /* Уменьшаем шрифт и размеры элементов для мобильных устройств */
-  .cart-item input,
-  .cart-item button {
-      font-size: 0.875rem; /* Уменьшаем текст для кнопок и инпутов */
-  }
-
-  .table-cart__header div {
-      font-size: 0.75rem; /* Уменьшаем текст заголовков */
-      text-align: center; /* Центрируем текст */
-  }
-
-  .cart-item .item-total p,
-  .cart-item .item-price p {
-      text-align: center; /* Центрируем текст в колонках */
-  }
-
-  .cart-item .item-details {
-      text-align: left; /* Оставляем описание товара слева */
-  }
+    .overlay {
+        display: none; /* Скрываем наложение на карте */
+    }
 }
 
 
