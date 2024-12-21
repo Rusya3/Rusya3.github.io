@@ -564,5 +564,74 @@ input[disabled] {
 
 /* 
 
+/* Общие стили для мобильных устройств */
+@media (max-width: 576px) {
+  /* Добавляем горизонтальную прокрутку */
+  .cart {
+      overflow-x: auto; /* Включаем горизонтальную прокрутку */
+      white-space: nowrap; /* Сохраняем элементы в одну строку */
+  }
+
+  /* Сохраняем табличное расположение заголовков */
+  .table-cart__header {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr; /* 4 равные колонки */
+      gap: 0.5rem; /* Отступы между колонками */
+      width: 800px; /* Ширина контейнера для скролла */
+  }
+
+  /* Сохраняем табличное расположение товаров */
+  .cart-item {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr; /* 4 равные колонки */
+      gap: 0.5rem; /* Отступы между колонками */
+      width: 800px; /* Ширина контейнера для скролла */
+  }
+
+  /* Настройка колонок внутри товаров */
+  .cart-item .item-image {
+      grid-column: 1 / 2; /* Изображение в первой колонке */
+  }
+
+  .cart-item .item-details {
+      grid-column: 2 / 3; /* Детали товара во второй колонке */
+  }
+
+  .cart-item .item-price {
+      grid-column: 3 / 4; /* Цена в третьей колонке */
+  }
+
+  .cart-item .item-controls {
+      grid-column: 4 / 5; /* Управление количеством в четвертой колонке */
+  }
+
+  .cart-item .item-total {
+      grid-column: 5 / 6; /* Итоговая сумма в пятой колонке */
+  }
+
+  .cart-item .remove-item {
+      grid-column: 6 / 7; /* Кнопка удаления в шестой колонке */
+  }
+
+  /* Уменьшаем шрифт и размеры элементов для мобильных устройств */
+  .cart-item input,
+  .cart-item button {
+      font-size: 0.875rem; /* Уменьшаем текст для кнопок и инпутов */
+  }
+
+  .table-cart__header div {
+      font-size: 0.75rem; /* Уменьшаем текст заголовков */
+      text-align: center; /* Центрируем текст */
+  }
+
+  .cart-item .item-total p,
+  .cart-item .item-price p {
+      text-align: center; /* Центрируем текст в колонках */
+  }
+
+  .cart-item .item-details {
+      text-align: left; /* Оставляем описание товара слева */
+  }
+}
 
 
