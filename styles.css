@@ -277,7 +277,7 @@ body {
 
 .item-details {
     flex: 2;
-    margin-left: 15px;
+    margin-left: 10px;
 }
 
 .item-details h3 {
@@ -589,15 +589,34 @@ input[disabled] {
    /* margin-left: 820px; /* Сдвигаем элемент вправо */
     text-align: right; /* Выравнивание текста */
     padding: 5px 10px; /* Устанавливаем отступы для нормального клика */
-    margin-bottom: 15px; /* Отступ между заголовками и содержимым */
+    
 }
+.item-quantity::after {
+  content: "="; /* Добавляем знак = */
+  display: inline-block;
+ 
+  
+  font-size: 12px; /* Размер знака */
+  color: #333; /* Цвет знака */
+  position: relative;
+}
+.item-quantity, .item-packs{
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    padding: 5px;
+    max-width: 165px;
+}
+
   body {
       padding: 20px; /* Уменьшаем отступы для удобства */
   }
 
   .cart {
       max-width: 90%; /* Растягиваем корзину на весь экран */
-      padding: 15px; /* Уменьшаем внутренние отступы */
+      padding: 10px; /* Уменьшаем внутренние отступы */
       box-shadow: none; /* Убираем лишние тени для простоты */
   }
   .cart-title {
@@ -608,8 +627,8 @@ input[disabled] {
   display: flex;
   flex-wrap: wrap; /* Разрешить перенос элементов на новую строку */
   gap: 10px; /* Расстояние между элементами */
-  border: 1px solid #ddd; /* Добавляем рамку для стиля */
-  padding: 10px;
+  
+  padding: 5px;
 }
 .cart-item .item-image {
   display: flex;
@@ -618,41 +637,55 @@ input[disabled] {
  
 }
 
-.cart-item .item-image,
-.cart-item .item-details {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  
-  
-}
-
 .cart-item .item-image img {
   max-width: 100%; /* Сделать изображение адаптивным */
   height: auto;
 }
-
-.cart-item .item-details {
-  font-size: 0.875rem; /* Текстовые детали */
+.item-details h3 {
+  font-size: 16px;
+  margin-bottom: 5px;
+  text-align: justify; /* Выравнивание текста по ширине */
 }
+
 /*сделать отдельно*/
-.cart-item .item-price,
-.cart-item .item-controls,
-.cart-item .item-total,
+
+
+
 .cart-item .remove-item {
+  font-size: 31px;
+  display: flex;
+  justify-content: right; /* Выравнивание элементов по центру */
+  align-items: right;
+  text-align: right;
+  
+}
+.cart-item .item-total{
+  display: flex;
+  justify-content: left; /* Выравнивание элементов по центру */
+}
+.cart-item .item-price{
   flex: 1 1 100%; /* Все остальные элементы занимают всю строку */
   display: flex;
-  justify-content: center; /* Выравнивание элементов по центру */
-  align-items: center;
-  text-align: center;
+  justify-content: left; /* Выравнивание элементов по центру */
+  margin-bottom: 10px;
 }
-
+.cart-item .item-controls {
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* Выравнивание по вертикали */
+  justify-content: center; /* Центрирование содержимого по горизонтали */
+  gap: 10px; /* Расстояние между кнопками */
+  max-width: 100%; /* Запрещаем вылезать за пределы контейнера */
+  box-sizing: border-box; /* Учитываем отступы и границы в общей ширине */
+  
+}
 /* Упорядочиваем элементы */
 .cart-item .item-image {
   order: 1; /* Первыми отображаются изображения */
 }
 
 .cart-item .item-details {
+   
   order: 2; /* Затем детали */
 }
 
@@ -669,15 +702,31 @@ input[disabled] {
 }
 
 .cart-item .remove-item {
-  order: 6; /* Кнопка удаления в самом низу */
+  order: 2; /* Кнопка удаления в самом низу */
 }
+.delivery-note {
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 15px;
+  
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 15px;
+    max-width: 150px; /* Устанавливаем максимальную ширину блока */
+    line-height: 1.5; /* Делаем строки более читаемыми */
+    word-wrap: break-word; /* Разрешаем перенос слов, если они слишком длинные */
+    text-align: left; /* Текст выравнивается по левому краю */
+    
+    
+   
 
+}
   .summary-row {
       display: flex;
-      flex-direction: column; /* Переключаем на вертикальное расположение */
-      text-align: center; /* Центрируем текст */
+      text-align: start; /* Центрируем текст */
       font-size: 1rem; /* Уменьшаем общий размер текста */
-      gap: 0.5rem; /* Добавляем отступы между строками */
+      gap: 12.5rem; /* Добавляем отступы между строками */
+      margin-bottom: 10px;
   }
 
   .total-price {
@@ -688,7 +737,8 @@ input[disabled] {
       width: 100%; /* Кнопка на всю ширину */
       font-size: 1rem;
       padding: 10px;
-      border-radius: 6px;
+      
+      justify-content: center;
       text-align: center;
       background-color: #000;
       color: #fff;
