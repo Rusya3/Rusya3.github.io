@@ -244,17 +244,19 @@ body {
 }
 
 .clear-cart {
-    display: flex; /* Сделаем элемент строчно-блочным */
-    justify-content: flex-end;
-    font-size: 14px;
-    color: #999;
-    text-decoration: none;
-    cursor: pointer;
-   /* margin-left: 820px; /* Сдвигаем элемент вправо */
-    text-align: right; /* Выравнивание текста */
-    padding: 5px 10px; /* Устанавливаем отступы для нормального клика */
-    margin-bottom: 15px; /* Отступ между заголовками и содержимым */
-
+  display: flex; /* Сделаем элемент строчно-блочным */
+  justify-content: flex-end; /* Выравнивание по правому краю */
+  align-items: center; /* Выравнивание по центру по вертикали (если нужно) */
+  font-size: 14px;
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: right;
+  padding: 5px 10px; /* Устанавливаем отступы для нормального клика */
+  margin-bottom: 15px; /* Отступ между заголовками и содержимым */
+  width: auto; /* Ширина контейнера под контент (по умолчанию) */
+  max-width: 120px; /* Максимальная ширина, чтобы уменьшить область */
+  margin-left: auto; /* Отталкивает контейнер вправо */
 }
 
 
@@ -677,3 +679,49 @@ input[disabled] {
   }
 }
 
+
+
+
+
+
+
+
+@media (max-width: 1080px) {
+  .table-cart__header {
+      display: none;
+  }
+
+  .clear-cart {
+      justify-content: flex-end;
+      font-size: 12px;  /* Меньший размер шрифта для маленьких экранов */
+      color: #888;      /* Светлый цвет */
+      padding: 4px 8px; /* Уменьшаем отступы */
+      margin-bottom: 10px; /* Меньше отступов */
+  }
+
+  .cart {
+      max-width: 35%; /* Для маленьких экранов */
+      padding: 15px;  /* Уменьшаем внутренние отступы */
+      box-shadow: none; /* Убираем лишнюю тень */
+  }
+
+  .cart-item {
+      flex-direction: column; /* Переключаемся на вертикальное расположение */
+  }
+
+  .cart-item .item-image,
+  .cart-item .item-details {
+      width: 100%;  /* Для мобильных экранов изображения и детали по ширине */
+  }
+
+  .summary-row {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      gap: 0.5rem;
+  }
+
+  .checkout-btn {
+      width: 100%; /* Кнопка на всю ширину */
+  }
+}
