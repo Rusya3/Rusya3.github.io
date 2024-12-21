@@ -714,17 +714,25 @@ input[disabled] {
    
 
 }
-  .summary-row {
-      display: flex;
-      text-align: start; /* Центрируем текст */
-      font-size: 1rem; /* Уменьшаем общий размер текста */
-      gap: 12.5rem; /* Добавляем отступы между строками */
-      margin-bottom: 10px;
-  }
+.summary-row {
+  display: flex;
+  flex-direction: row;
+  text-align: start; /* Центрируем текст */
+  font-size: 1rem; /* Уменьшаем общий размер текста */
+  gap: 9.3rem; /* Добавляем отступы между строками */
+  margin-bottom: 10px;
+  position: relative;
+  white-space: nowrap; /* Запрещаем перенос текста */
+}
 
-  .total-price {
-      font-size: 1.25rem; /* Выделяем текст суммы */
-  }
+.total-price {
+  text-align: end; /* Центрируем текст */
+  font-size: 18px; /* Выделяем текст суммы */
+  margin-right: 10px;
+  white-space: nowrap; /* Запрещаем перенос текста на новую строку */
+  min-width: 100px; /* Устанавливаем минимальную ширину для предотвращения сдвига */
+  
+}
 
   .checkout-btn {
       width: 100%; /* Кнопка на всю ширину */
@@ -897,17 +905,25 @@ button.quantity-btn {
    
 
 }
-  .summary-row {
-      display: flex;
-      text-align: start; /* Центрируем текст */
-      font-size: 1rem; /* Уменьшаем общий размер текста */
-      gap: 10rem; /* Добавляем отступы между строками */
-      margin-bottom: 10px;
-  }
+.summary-row {
+  display: flex;
+  flex-direction: row;
+  text-align: start; /* Центрируем текст */
+  font-size: 1rem; /* Уменьшаем общий размер текста */
+  gap: 7rem; /* Добавляем отступы между строками */
+  margin-bottom: 10px;
+  position: relative;
+  white-space: nowrap; /* Запрещаем перенос текста */
+}
 
-  .total-price {
-      font-size: 1.25rem; /* Выделяем текст суммы */
-  }
+.total-price {
+  text-align: end; /* Центрируем текст */
+  font-size: 18px; /* Выделяем текст суммы */
+  margin-right: 10px;
+  white-space: nowrap; /* Запрещаем перенос текста на новую строку */
+  min-width: 100px; /* Устанавливаем минимальную ширину для предотвращения сдвига */
+  
+}
 
   .checkout-btn {
       width: 100%; /* Кнопка на всю ширину */
