@@ -563,12 +563,120 @@ input[disabled] {
   justify-self: left; /* Выровнять по правому краю */
   text-align: right; /* Выравнивание текста по правому краю */
 }
+ 
 
+/* Адаптация для устройств шириной до 1080px (например, 2460x1080) */
+@media (max-width: 596px) {
+  .table-cart__header {
+    display: none;
+  }
+  body {
+      padding: 20px; /* Уменьшаем отступы для удобства */
+  }
 
+  .cart {
+      max-width: 70%; /* Растягиваем корзину на весь экран */
+      padding: 15px; /* Уменьшаем внутренние отступы */
+      box-shadow: none; /* Убираем лишние тени для простоты */
+  }
+  .cart-title {
+    font-size: 24px;
+    
+}
+.cart-item {
+  display: flex;
+  flex-wrap: wrap; /* Разрешить перенос элементов на новую строку */
+  gap: 10px; /* Расстояние между элементами */
+  border: 1px solid #ddd; /* Добавляем рамку для стиля */
+  padding: 10px;
+}
+.cart-item .item-image {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 0 1000px 10px; /* Устанавливаем фиксированную ширину для .item-image (например, 150px) */
+}
 
+.cart-item .item-image,
+.cart-item .item-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1 1 ; /* Два элемента на одной строке */
+  
+}
 
+.cart-item .item-image img {
+  max-width: 100%; /* Сделать изображение адаптивным */
+  height: auto;
+}
 
+.cart-item .item-details {
+  font-size: 0.875rem; /* Текстовые детали */
+}
+/*сделать отдельно*/
+.cart-item .item-price,
+.cart-item .item-controls,
+.cart-item .item-total,
+.cart-item .remove-item {
+  flex: 1 1 100%; /* Все остальные элементы занимают всю строку */
+  display: flex;
+  justify-content: center; /* Выравнивание элементов по центру */
+  align-items: center;
+  text-align: center;
+}
 
+/* Упорядочиваем элементы */
+.cart-item .item-image {
+  order: 1; /* Первыми отображаются изображения */
+}
+
+.cart-item .item-details {
+  order: 2; /* Затем детали */
+}
+
+.cart-item .item-price {
+  order: 3; /* Цена идет на новой строке */
+}
+
+.cart-item .item-controls {
+  order: 4; /* Управление количеством ниже */
+}
+
+.cart-item .item-total {
+  order: 5; /* Итоговая сумма */
+}
+
+.cart-item .remove-item {
+  order: 6; /* Кнопка удаления в самом низу */
+}
+
+  .summary-row {
+      display: flex;
+      flex-direction: column; /* Переключаем на вертикальное расположение */
+      text-align: center; /* Центрируем текст */
+      font-size: 1rem; /* Уменьшаем общий размер текста */
+      gap: 0.5rem; /* Добавляем отступы между строками */
+  }
+
+  .total-price {
+      font-size: 1.25rem; /* Выделяем текст суммы */
+  }
+
+  .checkout-btn {
+      width: 100%; /* Кнопка на всю ширину */
+      font-size: 1rem;
+      padding: 10px;
+      border-radius: 6px;
+      text-align: center;
+      background-color: #000;
+      color: #fff;
+  }
+
+  .checkout-btn:hover {
+      background-color: #444; /* Легкое изменение фона при наведении */
+  }
+}
 
 
 
@@ -588,7 +696,7 @@ input[disabled] {
   }
 
   .cart {
-      max-width: 100%; /* Для маленьких экранов */
+      max-width: 40%; /* Для маленьких экранов */
       padding: 15px;  /* Уменьшаем внутренние отступы */
       box-shadow: none; /* Убираем лишнюю тень */
   }
