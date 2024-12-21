@@ -707,7 +707,7 @@ input[disabled] {
 
   .cart-item .item-image,
   .cart-item .item-details {
-      width: %;  /* Для мобильных экранов изображения и детали по ширине */
+      
   }
 
   .summary-row {
