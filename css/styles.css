@@ -572,18 +572,26 @@ input[disabled] {
   .table-cart__header {
     display: none;
   }
+  .cart-title,
   .clear-cart {
-    
-    justify-content: flex-end;
+    display: inline-flex; /* Используем inline-flex, чтобы они оставались на одной строке */
+     justify-content: space-between; /* Выравниваем по вертикали */
+     max-width: 145px;
+  }
+
+  .clear-cart {
     font-size: 14px;
     color: #999;
     text-decoration: none;
     cursor: pointer;
-   /* margin-left: 820px; /* Сдвигаем элемент вправо */
-    text-align: right; /* Выравнивание текста */
-    padding: 5px 10px; /* Устанавливаем отступы для нормального клика */
+    padding: 5px 95px; /*добился расположения благодаря нему*/
+    white-space: nowrap; /* Запрещаем перенос текста */
+  }
+
+  .cart-title {
+    font-size: 24px;
     
-}
+  }
 .item-quantity::after {
   content: "="; /* Добавляем знак = */
   display: inline-block;
@@ -612,10 +620,7 @@ input[disabled] {
       padding: 10px; /* Уменьшаем внутренние отступы */
       box-shadow: none; /* Убираем лишние тени для простоты */
   }
-  .cart-title {
-    font-size: 24px;
-    
-}
+ 
 .cart-item {
   display: flex;
   flex-wrap: wrap; /* Разрешить перенос элементов на новую строку */
@@ -758,17 +763,32 @@ input[disabled] {
   .table-cart__header {
     display: none;
   }
+  /* Оба элемента становятся flex-контейнерами */
+  .cart-title,
   .clear-cart {
-    
-    justify-content: flex-end;
+    display: inline-flex; /* Используем inline-flex, чтобы они оставались на одной строке */
+     justify-content: space-between; /* Выравниваем по вертикали */
+     max-width: 145px;
+  }
+
+  .clear-cart {
     font-size: 14px;
     color: #999;
     text-decoration: none;
     cursor: pointer;
-   /* margin-left: 820px; /* Сдвигаем элемент вправо */
-    text-align: right; /* Выравнивание текста */
-    padding: 5px 10px; /* Устанавливаем отступы для нормального клика */
-    
+    padding: 5px 70px; /*добился расположения благодаря нему*/
+    white-space: nowrap; /* Запрещаем перенос текста */
+  }
+
+  .cart-title {
+    font-size: 24px;
+    flex-grow: 1000px; /* Даем .cart-title больше пространства, оно будет тянуться влево */
+  }
+
+.cart {
+  max-width: 90%; /* Растягиваем корзину на весь экран */
+  padding: 10px; /* Уменьшаем внутренние отступы */
+  box-shadow: none; /* Убираем лишние тени для простоты */
 }
 .item-quantity::after {
   content: "="; /* Добавляем знак = */
@@ -798,15 +818,8 @@ button.quantity-btn {
       padding: 20px; /* Уменьшаем отступы для удобства */
   }
 
-  .cart {
-      max-width: 90%; /* Растягиваем корзину на весь экран */
-      padding: 10px; /* Уменьшаем внутренние отступы */
-      box-shadow: none; /* Убираем лишние тени для простоты */
-  }
-  .cart-title {
-    font-size: 24px;
-    
-}
+ 
+ 
 .cart-item {
   display: flex;
   flex-wrap: wrap; /* Разрешить перенос элементов на новую строку */
