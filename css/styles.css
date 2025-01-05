@@ -6,313 +6,324 @@
     font-display: swap;
     src: url(https://fonts.gstatic.com/s/manrope/v15/xn7gYHE41ni1AdIRggqxSuXd.woff2) format('woff2');
     unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-  }
-  /* cyrillic */
-  @font-face {
+}
+
+/* cyrillic */
+@font-face {
     font-family: 'Manrope';
     font-style: normal;
     font-weight: 400;
     font-display: swap;
     src: url(https://fonts.gstatic.com/s/manrope/v15/xn7gYHE41ni1AdIRggOxSuXd.woff2) format('woff2');
     unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-  }
-  /* greek */
-  @font-face {
+}
+
+/* greek */
+@font-face {
     font-family: 'Manrope';
     font-style: normal;
     font-weight: 400;
     font-display: swap;
     src: url(https://fonts.gstatic.com/s/manrope/v15/xn7gYHE41ni1AdIRggSxSuXd.woff2) format('woff2');
     unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
-  }
-  /* vietnamese */
-  @font-face {
+}
+
+/* vietnamese */
+@font-face {
     font-family: 'Manrope';
     font-style: normal;
     font-weight: 400;
     font-display: swap;
     src: url(https://fonts.gstatic.com/s/manrope/v15/xn7gYHE41ni1AdIRggixSuXd.woff2) format('woff2');
     unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
-  }
-  /* latin-ext */
-  @font-face {
+}
+
+/* latin-ext */
+@font-face {
     font-family: 'Manrope';
     font-style: normal;
     font-weight: 400;
     font-display: swap;
     src: url(https://fonts.gstatic.com/s/manrope/v15/xn7gYHE41ni1AdIRggmxSuXd.woff2) format('woff2');
     unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-  }
-  /* latin */
-  @font-face {
+}
+
+/* latin */
+@font-face {
     font-family: 'Manrope';
     font-style: normal;
     font-weight: 400;
     font-display: swap;
     src: url(https://fonts.gstatic.com/s/manrope/v15/xn7gYHE41ni1AdIRggexSg.woff2) format('woff2');
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-  }
-  /* cyrillic-ext */
-  @font-face {
+}
+
+/* cyrillic-ext */
+@font-face {
     font-family: 'Manrope';
     font-style: normal;
     font-weight: 500;
     font-display: swap;
     src: url(https://fonts.gstatic.com/s/manrope/v15/xn7gYHE41ni1AdIRggqxSuXd.woff2) format('woff2');
     unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-  }
-  /* cyrillic */
-  @font-face {
+}
+
+/* cyrillic */
+@font-face {
     font-family: 'Manrope';
     font-style: normal;
     font-weight: 500;
     font-display: swap;
     src: url(https://fonts.gstatic.com/s/manrope/v15/xn7gYHE41ni1AdIRggOxSuXd.woff2) format('woff2');
     unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-  }
-  /* greek */
-  @font-face {
+}
+
+/* greek */
+@font-face {
     font-family: 'Manrope';
     font-style: normal;
     font-weight: 500;
     font-display: swap;
     src: url(https://fonts.gstatic.com/s/manrope/v15/xn7gYHE41ni1AdIRggSxSuXd.woff2) format('woff2');
     unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
-  }
-  /* vietnamese */
-  @font-face {
+}
+
+/* vietnamese */
+@font-face {
     font-family: 'Manrope';
     font-style: normal;
     font-weight: 500;
     font-display: swap;
     src: url(https://fonts.gstatic.com/s/manrope/v15/xn7gYHE41ni1AdIRggixSuXd.woff2) format('woff2');
     unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
-  }
-  /* latin-ext */
-  @font-face {
+}
+
+/* latin-ext */
+@font-face {
     font-family: 'Manrope';
     font-style: normal;
     font-weight: 500;
     font-display: swap;
     src: url(https://fonts.gstatic.com/s/manrope/v15/xn7gYHE41ni1AdIRggmxSuXd.woff2) format('woff2');
     unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-  }
-  /* latin */
-  @font-face {
+}
+
+/* latin */
+@font-face {
     font-family: 'Manrope';
     font-style: normal;
     font-weight: 500;
     font-display: swap;
     src: url(https://fonts.gstatic.com/s/manrope/v15/xn7gYHE41ni1AdIRggexSg.woff2) format('woff2');
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-  }
-  /* cyrillic-ext */
-  @font-face {
+}
+
+/* cyrillic-ext */
+@font-face {
     font-family: 'Manrope';
     font-style: normal;
     font-weight: 600;
     font-display: swap;
     src: url(https://fonts.gstatic.com/s/manrope/v15/xn7gYHE41ni1AdIRggqxSuXd.woff2) format('woff2');
     unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-  }
-  /* cyrillic */
-  @font-face {
+}
+
+/* cyrillic */
+@font-face {
     font-family: 'Manrope';
     font-style: normal;
     font-weight: 600;
     font-display: swap;
     src: url(https://fonts.gstatic.com/s/manrope/v15/xn7gYHE41ni1AdIRggOxSuXd.woff2) format('woff2');
     unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-  }
-  /* greek */
-  @font-face {
+}
+
+/* greek */
+@font-face {
     font-family: 'Manrope';
     font-style: normal;
     font-weight: 600;
     font-display: swap;
     src: url(https://fonts.gstatic.com/s/manrope/v15/xn7gYHE41ni1AdIRggSxSuXd.woff2) format('woff2');
     unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
-  }
-  /* vietnamese */
-  @font-face {
+}
+
+/* vietnamese */
+@font-face {
     font-family: 'Manrope';
     font-style: normal;
     font-weight: 600;
     font-display: swap;
     src: url(https://fonts.gstatic.com/s/manrope/v15/xn7gYHE41ni1AdIRggixSuXd.woff2) format('woff2');
     unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
-  }
-  /* latin-ext */
-  @font-face {
+}
+
+/* latin-ext */
+@font-face {
     font-family: 'Manrope';
     font-style: normal;
     font-weight: 600;
     font-display: swap;
     src: url(https://fonts.gstatic.com/s/manrope/v15/xn7gYHE41ni1AdIRggmxSuXd.woff2) format('woff2');
     unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-  }
-  /* latin */
-  @font-face {
+}
+
+/* latin */
+@font-face {
     font-family: 'Manrope';
     font-style: normal;
     font-weight: 600;
     font-display: swap;
     src: url(https://fonts.gstatic.com/s/manrope/v15/xn7gYHE41ni1AdIRggexSg.woff2) format('woff2');
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-  }
-  /* cyrillic-ext */
-  @font-face {
+}
+
+/* cyrillic-ext */
+@font-face {
     font-family: 'Manrope';
     font-style: normal;
     font-weight: 700;
     font-display: swap;
     src: url(https://fonts.gstatic.com/s/manrope/v15/xn7gYHE41ni1AdIRggqxSuXd.woff2) format('woff2');
     unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-  }
-  /* cyrillic */
-  @font-face {
+}
+
+/* cyrillic */
+@font-face {
     font-family: 'Manrope';
     font-style: normal;
     font-weight: 700;
     font-display: swap;
     src: url(https://fonts.gstatic.com/s/manrope/v15/xn7gYHE41ni1AdIRggOxSuXd.woff2) format('woff2');
     unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-  }
-  /* greek */
-  @font-face {
+}
+
+/* greek */
+@font-face {
     font-family: 'Manrope';
     font-style: normal;
     font-weight: 700;
     font-display: swap;
     src: url(https://fonts.gstatic.com/s/manrope/v15/xn7gYHE41ni1AdIRggSxSuXd.woff2) format('woff2');
     unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
-  }
-  /* vietnamese */
-  @font-face {
+}
+
+/* vietnamese */
+@font-face {
     font-family: 'Manrope';
     font-style: normal;
     font-weight: 700;
     font-display: swap;
     src: url(https://fonts.gstatic.com/s/manrope/v15/xn7gYHE41ni1AdIRggixSuXd.woff2) format('woff2');
     unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
-  }
-  /* latin-ext */
-  @font-face {
+}
+
+/* latin-ext */
+@font-face {
     font-family: 'Manrope';
     font-style: normal;
     font-weight: 700;
     font-display: swap;
     src: url(https://fonts.gstatic.com/s/manrope/v15/xn7gYHE41ni1AdIRggmxSuXd.woff2) format('woff2');
     unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-  }
-  /* latin */
-  @font-face {
+}
+
+/* latin */
+@font-face {
     font-family: 'Manrope';
     font-style: normal;
     font-weight: 700;
     font-display: swap;
     src: url(https://fonts.gstatic.com/s/manrope/v15/xn7gYHE41ni1AdIRggexSg.woff2) format('woff2');
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-  }
-  
+}
+
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body {
     font-family: 'Manrope', Sans-Serif;
-    background-color: #f8f8f8;
     color: #000;
     line-height: 1.5;
-    padding: 20px;
 }
 
 .cart {
-    max-width: 1000px;
     margin: 0 auto;
-    background: #fff;
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .cart-title {
     font-size: 24px;
-    
+    font-weight: 500;
 }
 
 .clear-cart {
-  display: flex; /* Сделаем элемент строчно-блочным */
-  justify-content: flex-end; /* Выравнивание по правому краю */
-  align-items: center; /* Выравнивание по центру по вертикали (если нужно) */
-  font-size: 14px;
-  color: #999;
-  text-decoration: none;
-  cursor: pointer;
-  text-align: right;
-  padding: 5px 10px; /* Устанавливаем отступы для нормального клика */
-  margin-bottom: 15px; /* Отступ между заголовками и содержимым */
-  width: auto; /* Ширина контейнера под контент (по умолчанию) */
-  max-width: 140px; /* Максимальная ширина, чтобы уменьшить область */
-  margin-left: auto; /* Отталкивает контейнер вправо */
+    font-size: 14px;
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: right;
 }
-
 
 
 .cart-item {
     display: flex;
-    align-items: center;
-    padding: 15px 0;
-    
+    flex-direction: column;
+    margin-bottom: 3rem;
+}
+
+.item-image-details {
+    display: flex;
+    margin-bottom: 1rem;
 }
 
 .item-image img {
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
     object-fit: cover;
-    border-radius: 4px;
+    border-radius: 10px;
 }
 
 .item-details {
     flex: 2;
     margin-left: 10px;
+    max-width: 500px;
 }
 
 .item-details h3 {
-    font-size: 16px;
-    margin-bottom: 5px;
+    line-height: 22px;
+    font-size: 17px;
+    margin-bottom: 0.5rem;
 }
 
 .item-details p {
+    font-weight: 400;
     font-size: 14px;
-    color: #666;
+    margin-bottom: 1rem;
+}
+
+.sec-color {
+    color: #0000004D;
+}
+
+.line-through {
+    text-decoration: line-through;
 }
 
 .item-price {
-    flex: 1;
-    text-align: center;
+    margin-bottom: 1.5rem;
 }
 
 .item-price p {
-  font-weight: bold;
-  margin-bottom: 5px;
+    font-weight: 500;
 }
 
 .old-price {
     text-decoration: line-through;
     color: #999;
     font-size: 14px;
-}
-
-button.quantity-btn { /*с кнопками + -*/
-  all: unset; /* Сбрасывает все стили */
-  cursor: pointer; /* Добавляет указатель на кнопку */
-  padding: 0 20px; /* Добавляет отступы внутри кнопки */
-  font-size: 18px; /* Размер текста кнопки */
-  text-align: center; /* Выравнивание текста */
-  
 }
 
 /*button.quantity-btn:hover {
@@ -331,28 +342,30 @@ button.quantity-btn { /*с кнопками + -*/
 }
 */
 .item-quantity .value-container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 .item-quantity .value {
-  font-size: 16px;
-  text-align: right;
-  width: 40px; /* Ширина для числа */
+    font-size: 16px;
+    text-align: right;
+    width: 40px; /* Ширина для числа */
 }
 
 .item-quantity .unit {
-  font-size: 14px;
-  margin-left: 2px; /* Расстояние между числом и текстом */
-  color: #666;
+    font-size: 14px;
+    margin-left: 2px; /* Расстояние между числом и текстом */
+    color: #666;
 }
-.item-packs .unit{
-  font-size: 14px;
-  margin-left: 2px; /* Расстояние между числом и текстом */
-  color: #666;
+
+.item-packs .unit {
+    font-size: 14px;
+    margin-left: 2px; /* Расстояние между числом и текстом */
+    color: #666;
 }
+
 .item-quantity input { /*плюсы минусы стали двигаться*/
     width: 60px;
     font-weight: bold;
@@ -363,72 +376,81 @@ button.quantity-btn { /*с кнопками + -*/
 }
 
 .item-total { /*для итоговой цены определенного товара*/
-  font-weight: bold;
-  font-size: 25px;
-    flex: 1;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-weight: 500;
+    font-size: 23px;
+}
 
+.item-total span {
+    font-size: 17px;
+}
+
+.item-total .sale {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    background: #E0FB52;
+    border-radius: 100%;
+    font-size: 14px;
 }
 
 .remove-item {
     background: none;
     border: none;
-    font-size: 20px;
+    font-size: 40px;
     cursor: pointer;
     color: #999;
-}
-.cart-summary {
-    position: relative; /* Для позиционирования кнопки */
-    
 }
 
 .summary-row {
     display: flex;
     justify-content: space-between; /* Слово "Итого:" слева, цена справа */
-   font-size: 2.375rem ;
+    font-size: 2.375rem;
     flex-direction: row;
 }
 
 .total-label {
-    font-size: 20px;
-    font-weight: bold;
-    margin-right: 50;
+    font-size: 23px;
+    font-weight: 500;
 }
 
 .total-price { /*общая цена*/
-
-    font-size: 20px;
-    font-weight: bold;
-    font-weight: bold;
-    color: #333;
+    font-size: 23px;
+    font-weight: 500;
 }
 
 .delivery-note {
-    font-size: 12px;
-    color: #666;
+    font-size: 14px;
     margin-bottom: 15px;
-    
+    max-width: 200px;
 }
 
 .checkout-btn {
-    width: auto;
-    bottom: 100px; /* Отступ от нижней части */
-    right: 2px; /* Отступ от правой части */
+    width: 100%;
     background: #000;
     color: #fff;
     padding: 12px 20px;
-    font-size: 16px;
+    font-size: 14px;
     border: none;
-    border-radius: 30px; /* Закругление углов кнопки */
+    border-radius: 50px; /* Закругление углов кнопки */
     cursor: pointer;
+    font-weight: 400;
+    line-height: 21px;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
 }
 
 .checkout-btn:hover {
     background: #444;
 }
-.cart-summary-wrapper{
+
+.cart-summary-wrapper {
     display: flex;
-    align-items: flex-end;
     flex-direction: column;
 }
 
@@ -437,11 +459,10 @@ button.quantity-btn { /*с кнопками + -*/
 .item-packs {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     border: 2px solid #ddd; /* Цвет рамки */
     border-radius: 6px; /* Скругление углов */
-    padding: 5px; /* Внутренний отступ */
-    max-width: 180px; /* Ограничение ширины */
+    width: 100%;
 }
 
 .item-quantity input,
@@ -449,7 +470,7 @@ button.quantity-btn { /*с кнопками + -*/
     border: none;
     font-weight: bold;
     text-align: center;
-    width: 50px; /* Ширина поля */
+    width: 100%; /* Ширина поля */
     font-size: 16px; /* Размер текста */
     background-color: transparent; /* Убираем фон */
     outline: none; /* Убираем фокусную рамку */
@@ -459,8 +480,8 @@ button.quantity-btn { /*с кнопками + -*/
 
 .quantity-btn {
     border: none;
-    background-color: #f0f0f0; /* Фон кнопки */
-    padding: 5px 10px;
+    background-color: transparent; /* Фон кнопки */
+    padding: 10px 16px;
     font-size: 18px; /* Размер символа */
     font-weight: bold;
     color: #333; /* Цвет текста */
@@ -478,12 +499,12 @@ button.quantity-btn { /*с кнопками + -*/
 }
 
 
-
 .item-controls {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    gap: 10px; /* Расстояние между кнопками */
+    margin-bottom: 1.5rem;
+    gap: 10px;
 }
 
 /*
@@ -533,423 +554,871 @@ input[disabled] {
 } */
 /* Стили для контейнера заголовков таблицы */
 .table-cart__header {
-  display: grid; /* Используем grid для гибкости */
-  grid-template-columns: 1fr 1fr 1fr 1fr; /* Задаем 4 колонки равной ширины */
-  gap: 90px; /* Отступ между колонками */
-  font-size: 14px;
-  margin-bottom: 15px;
+    display: none;
 }
 
 .table-cart__header .table-cart__item-product-info {
-  
-  justify-self: start; /* Выровнять по левому краю */
-  text-align: left; /* Выравнивание текста по левому краю */
+    width: 60%;
+    text-align: left; /* Выравнивание текста по левому краю */
 }
 
 .table-cart__header .table-cart__item-square-price {
-  margin-left: 250px;
-  justify-self: center; /* Выровнять по центру */
-  text-align: center; /* Выравнивание текста по центру */
+    width: 20%;
 }
 
 .table-cart__header .table-cart__item-calc {
- /* margin-left: 30px;*/
-  justify-self: left; /* Выровнять по центру */
-  text-align: center; /* Выравнивание текста по центру */
+    width: 40%;
 }
 
 .table-cart__header .table-cart__item-total {
- /* margin-right: 20px;*/
-  justify-self: left; /* Выровнять по правому краю */
-  text-align: right; /* Выравнивание текста по правому краю */
+    width: 40%;
 }
- 
 
-
-
-@media (max-width: 430px) {
-
-  .table-cart__header {
-    display: none;
-  }
-  .cart-title,
-  .clear-cart {
-    display: inline-flex; /* Используем inline-flex, чтобы они оставались на одной строке */
-     justify-content: space-between; /* Выравниваем по вертикали */
-     max-width: 145px;
-  }
-
-  .clear-cart {
-    font-size: 14px;
-    color: #999;
-    text-decoration: none;
-    cursor: pointer;
-    padding: 5px 95px; /*добился расположения благодаря нему*/
-    white-space: nowrap; /* Запрещаем перенос текста */
-  }
-
-  .cart-title {
-    font-size: 24px;
-    
-  }
-.item-quantity::after {
-  content: "="; /* Добавляем знак = */
-  display: inline-block;
- 
-  
-  font-size: 12px; /* Размер знака */
-  color: #333; /* Цвет знака */
-  position: relative;
+.table-cart__item-remove{
+    width: 10px;
 }
-.item-quantity, .item-packs{
-  display: flex;
+
+.table-cart__item-calctable-cart__item-total{
+    width: 40%;
+}
+
+.title {
+    display: flex;
     align-items: center;
-    justify-content: center;
-    border: 2px solid #ddd;
-    border-radius: 6px;
-    padding: 5px;
-    max-width: 165px;
+    justify-content: space-between;
+    margin-bottom: 1rem;
 }
 
-  body {
-      padding: 20px; /* Уменьшаем отступы для удобства */
-  }
-
-  .cart {
-      max-width: 90%; /* Растягиваем корзину на весь экран */
-      padding: 10px; /* Уменьшаем внутренние отступы */
-      box-shadow: none; /* Убираем лишние тени для простоты */
-  }
- 
-.cart-item {
-  display: flex;
-  flex-wrap: wrap; /* Разрешить перенос элементов на новую строку */
-  gap: 10px; /* Расстояние между элементами */
-  
-  padding: 5px;
-}
-.cart-item .item-image {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
- 
-}
-
-.cart-item .item-image img {
-  max-width: 100%; /* Сделать изображение адаптивным */
-  height: auto;
-}
-.item-details h3 {
-  font-size: 16px;
-  margin-bottom: 5px;
-  text-align: justify; /* Выравнивание текста по ширине */
-}
-
-/*сделать отдельно*/
-
-
-
-.cart-item .remove-item {
-  font-size: 31px;
-  display: flex;
-  justify-content: right; /* Выравнивание элементов по центру */
-  align-items: right;
-  text-align: right;
-  
-}
-.cart-item .item-total{
-  display: flex;
-  justify-content: left; /* Выравнивание элементов по центру */
-}
-.cart-item .item-price{
-  flex: 1 1 100%; /* Все остальные элементы занимают всю строку */
-  display: flex;
-  justify-content: left; /* Выравнивание элементов по центру */
-  margin-bottom: 10px;
-}
-.cart-item .item-controls {
-  display: flex;
-  flex-direction: row;
-  align-items: center; /* Выравнивание по вертикали */
-  justify-content: center; /* Центрирование содержимого по горизонтали */
-  gap: 10px; /* Расстояние между кнопками */
-  max-width: 100%; /* Запрещаем вылезать за пределы контейнера */
-  box-sizing: border-box; /* Учитываем отступы и границы в общей ширине */
-  
-}
-/* Упорядочиваем элементы */
-.cart-item .item-image {
-  order: 1; /* Первыми отображаются изображения */
-}
-
-.cart-item .item-details {
-   
-  order: 2; /* Затем детали */
-}
-
-.cart-item .item-price {
-  order: 3; /* Цена идет на новой строке */
-}
-
-.cart-item .item-controls {
-  order: 4; /* Управление количеством ниже */
-}
-
-.cart-item .item-total {
-  order: 5; /* Итоговая сумма */
-}
-
-.cart-item .remove-item {
-  order: 2; /* Кнопка удаления в самом низу */
-}
-.delivery-note {
-  font-size: 12px;
-  color: #666;
-  margin-bottom: 15px;
-  
-    font-size: 12px;
-    color: #666;
-    margin-bottom: 15px;
-    max-width: 150px; /* Устанавливаем максимальную ширину блока */
-    line-height: 1.5; /* Делаем строки более читаемыми */
-    word-wrap: break-word; /* Разрешаем перенос слов, если они слишком длинные */
-    text-align: left; /* Текст выравнивается по левому краю */
-    
-    
-   
-
-}
-.summary-row {
-  display: flex;
-  flex-direction: row;
-  text-align: start; /* Центрируем текст */
-  font-size: 1rem; /* Уменьшаем общий размер текста */
-  gap: 9.3rem; /* Добавляем отступы между строками */
-  margin-bottom: 10px;
-  position: relative;
-  white-space: nowrap; /* Запрещаем перенос текста */
-}
-
-.total-price {
-  text-align: end; /* Центрируем текст */
-  font-size: 18px; /* Выделяем текст суммы */
-  margin-right: 10px;
-  white-space: nowrap; /* Запрещаем перенос текста на новую строку */
-  min-width: 100px; /* Устанавливаем минимальную ширину для предотвращения сдвига */
-  
-}
-
-  .checkout-btn {
-      width: 100%; /* Кнопка на всю ширину */
-      font-size: 1rem;
-      padding: 10px;
-      
-      justify-content: center;
-      text-align: center;
-      background-color: #000;
-      color: #fff;
-  }
-
-  .checkout-btn:hover {
-      background-color: #444; /* Легкое изменение фона при наведении */
-  }
-}
-
-
-
-
-@media (max-width: 390px){
-
-  .table-cart__header {
+.remove-item2 {
     display: none;
-  }
-  /* Оба элемента становятся flex-контейнерами */
-  .cart-title,
-  .clear-cart {
-    display: inline-flex; /* Используем inline-flex, чтобы они оставались на одной строке */
-     justify-content: space-between; /* Выравниваем по вертикали */
-     max-width: 145px;
-  }
-
-  .clear-cart {
-    font-size: 14px;
-    color: #999;
-    text-decoration: none;
-    cursor: pointer;
-    padding: 5px 70px; /*добился расположения благодаря нему*/
-    white-space: nowrap; /* Запрещаем перенос текста */
-  }
-
-  .cart-title {
-    font-size: 24px;
-    flex-grow: 1000px; /* Даем .cart-title больше пространства, оно будет тянуться влево */
-  }
-
-.cart {
-  max-width: 90%; /* Растягиваем корзину на весь экран */
-  padding: 10px; /* Уменьшаем внутренние отступы */
-  box-shadow: none; /* Убираем лишние тени для простоты */
-}
-.item-quantity::after {
-  content: "="; /* Добавляем знак = */
-  display: inline-block;
- 
-  font-size: 12px; /* Размер знака */
-  color: #333; /* Цвет знака */
-  position: relative;
-}
-.item-quantity, .item-packs{
-  display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 2px solid #ddd;
-    border-radius: 6px;
-    padding: 5px;
-    max-width: 145px;
-}
-button.quantity-btn {
-  all: unset;
-  /* cursor: pointer; */
-  padding: 0 15px;
-  font-size: 18px;
-  text-align: center;
-}
-  body {
-      padding: 20px; /* Уменьшаем отступы для удобства */
-  }
-
- 
- 
-.cart-item {
-  display: flex;
-  flex-wrap: wrap; /* Разрешить перенос элементов на новую строку */
-  gap: 10px; /* Расстояние между элементами */
-  
-  padding: 5px;
-}
-.cart-item .item-image {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
- 
 }
 
-.cart-item .item-image img {
-  max-width: 100%; /* Сделать изображение адаптивным */
-  height: auto;
-}
-.item-details h3 {
-  font-size: 16px;
-  margin-bottom: 5px;
-  text-align: justify; /* Выравнивание текста по ширине */
+@media (min-width: 576px) {
+    .item-image img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .item-price {
+        margin: 1rem 0 0 0
+    }
+
+    .item-details h3 {
+        line-height: 31px;
+        font-size: 24px;
+    }
+
+    .total-label, .total-price {
+        font-size: 30px;
+    }
+
+    .delivery-note, .checkout-btn {
+        font-size: 20px;
+    }
+
+    .checkout-btn{
+        padding: 18px;
+    }
+
+    .item-details p {
+        font-size: 20px;
+        margin-bottom: 0;
+    }
+
+    .item-controlsitem-total{
+        gap: 2rem;
+    }
+
+    .item-price p {
+        font-size: 24px;
+    }
+
+    .item-controls {
+        margin: 0;
+        gap: 1rem;
+    }
+
+    .item-total {
+        align-items: start;
+    }
+
+    .cart-summary-wrapper {
+        width: 400px;
+        float: right;
+    }
+
+    .sm\:align-items-center {
+        align-items: center !important;
+    }
+
+    .sm\:gap-0 {
+        gap: 0rem !important;
+    }
+
+
+    .item-quantity,
+    .item-packs {
+        width: 200px;
+    }
 }
 
-/*сделать отдельно*/
+@media (min-width: 1200px) {
+    body {
+        margin: 20px;
+    }
+
+    .item-price p {
+        font-size: 30px;
+    }
+
+    .cart-title {
+        font-size: 46px;
+    }
+
+    .item-total {
+        font-size: 38px;
+    }
+
+    .cart-summary-wrapper {
+        width: 500px;
+    }
+
+    .item-details h3 {
+        line-height: 34px;
+        font-size: 26px;
+        margin-bottom: 24px;
+    }
+
+    .item-details p {
+        font-size: 21px;
+        line-height: 31px;
+        margin-bottom: 0;
+    }
+
+    .item-total span{
+        font-size: 30px;
+    }
+
+    .item-image img {
+        width: 167px;
+        height: 167px;
+    }
+
+    .item-image-details {
+        margin-bottom: 0;
+        width: 60%;
+    }
+
+    .clear-cart{
+        font-size: 21px;
+    }
+
+    .item-price {
+        width: 20%;
+    }
+
+    .total-label, .total-price {
+        font-size: 38px;
+    }
 
 
+    .item-controlsitem-total{
+        width: 40%;
+    }
 
-.cart-item .remove-item {
-  font-size: 31px;
-  display: flex;
-  justify-content: right; /* Выравнивание элементов по центру */
-  align-items: right;
-  text-align: right;
-  
-}
-.cart-item .item-total{
-  display: flex;
-  justify-content: left; /* Выравнивание элементов по центру */
-}
-.cart-item .item-price{
-  flex: 1 1 100%; /* Все остальные элементы занимают всю строку */
-  display: flex;
-  justify-content: left; /* Выравнивание элементов по центру */
-  margin-bottom: 10px;
-}
-.cart-item .item-controls {
-  display: flex;
-  flex-direction: row;
-  align-items: center; /* Выравнивание по вертикали */
-  justify-content: center; /* Центрирование содержимого по горизонтали */
-  gap: 10px; /* Расстояние между кнопками */
-  max-width: 100%; /* Запрещаем вылезать за пределы контейнера */
-  box-sizing: border-box; /* Учитываем отступы и границы в общей ширине */
-  
-}
-/* Упорядочиваем элементы */
-.cart-item .item-image {
-  order: 1; /* Первыми отображаются изображения */
-}
+    .item-controls {
+        width: 40%;
+    }
 
-.cart-item .item-details {
-   
-  order: 2; /* Затем детали */
-}
+    .item-total {
+        width: 40%;
+    }
 
-.cart-item .item-price {
-  order: 3; /* Цена идет на новой строке */
-}
+    .item-controls {
+        align-items: start;
+    }
 
-.cart-item .item-controls {
-  order: 4; /* Управление количеством ниже */
-}
+    .item-quantity input, .item-packs input {
+        font-size: 21px;
+    }
+    /*.cart {*/
+    /*    border-radius: 8px;*/
+    /*    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);*/
+    /*}*/
 
-.cart-item .item-total {
-  order: 5; /* Итоговая сумма */
-}
+    .item-image-details .remove-item {
+        display: none;
+    }
 
-.cart-item .remove-item {
-  order: 2; /* Кнопка удаления в самом низу */
-}
-.delivery-note {
-  font-size: 12px;
-  color: #666;
-  margin-bottom: 15px;
-  
-    font-size: 12px;
-    color: #666;
-    margin-bottom: 15px;
-    max-width: 150px; /* Устанавливаем максимальную ширину блока */
-    line-height: 1.5; /* Делаем строки более читаемыми */
-    word-wrap: break-word; /* Разрешаем перенос слов, если они слишком длинные */
-    text-align: left; /* Текст выравнивается по левому краю */
-    
-    
-   
+    .title {
+        align-items: stretch;
+        flex-direction: column;
+    }
 
-}
-.summary-row {
-  display: flex;
-  flex-direction: row;
-  text-align: start; /* Центрируем текст */
-  font-size: 1rem; /* Уменьшаем общий размер текста */
-  gap: 7rem; /* Добавляем отступы между строками */
-  margin-bottom: 10px;
-  position: relative;
-  white-space: nowrap; /* Запрещаем перенос текста */
+    .xl\:hidden {
+        display: none !important;
+    }
+
+    .xl\:gap-5 {
+        gap: 2rem;
+    }
+
+    .xl\:align-items-start {
+        align-items: start !important;
+    }
+
+    .cart-item {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
+    .table-cart__header {
+        display: flex; /* Используем grid для гибкости */
+        gap: 1rem; /* Отступ между колонками */
+        font-size: 21px;
+        margin-bottom: 35px;
+    }
 }
 
-.total-price {
-  text-align: end; /* Центрируем текст */
-  font-size: 18px; /* Выделяем текст суммы */
-  margin-right: 10px;
-  white-space: nowrap; /* Запрещаем перенос текста на новую строку */
-  min-width: 100px; /* Устанавливаем минимальную ширину для предотвращения сдвига */
-  
+
+.hidden {
+    display: none !important;
 }
 
-  .checkout-btn {
-      width: 100%; /* Кнопка на всю ширину */
-      font-size: 1rem;
-      padding: 10px;
-      
-      justify-content: center;
-      text-align: center;
-      background-color: #000;
-      color: #fff;
-  }
-
-  .checkout-btn:hover {
-      background-color: #444; /* Легкое изменение фона при наведении */
-  }
+.block {
+    display: block !important;
 }
+
+.inline {
+    display: inline !important;
+}
+
+.inline-block {
+    display: inline-block !important;
+}
+
+.flex {
+    display: flex !important;
+}
+
+.inline-flex {
+    display: inline-flex !important;
+}
+
+@media screen and (min-width: 576px) {
+    .sm\:hidden {
+        display: none !important;
+    }
+
+    .sm\:block {
+        display: block !important;
+    }
+
+    .sm\:inline {
+        display: inline !important;
+    }
+
+    .sm\:inline-block {
+        display: inline-block !important;
+    }
+
+    .sm\:flex {
+        display: flex !important;
+    }
+
+    .sm\:inline-flex {
+        display: inline-flex !important;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .md\:hidden {
+        display: none !important;
+    }
+
+    .md\:block {
+        display: block !important;
+    }
+
+    .md\:inline {
+        display: inline !important;
+    }
+
+    .md\:inline-block {
+        display: inline-block !important;
+    }
+
+    .md\:flex {
+        display: flex !important;
+    }
+
+    .md\:inline-flex {
+        display: inline-flex !important;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .lg\:hidden {
+        display: none !important;
+    }
+
+    .lg\:block {
+        display: block !important;
+    }
+
+    .lg\:inline {
+        display: inline !important;
+    }
+
+    .lg\:inline-block {
+        display: inline-block !important;
+    }
+
+    .lg\:flex {
+        display: flex !important;
+    }
+
+    .lg\:inline-flex {
+        display: inline-flex !important;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .xl\:hidden {
+        display: none !important;
+    }
+
+    .xl\:block {
+        display: block !important;
+    }
+
+    .xl\:inline {
+        display: inline !important;
+    }
+
+    .xl\:inline-block {
+        display: inline-block !important;
+    }
+
+    .xl\:flex {
+        display: flex !important;
+    }
+
+    .xl\:inline-flex {
+        display: inline-flex !important;
+    }
+}
+
+.gap-0 {
+    gap: 0rem !important;
+}
+
+.gap-1 {
+    gap: 0.25rem !important;
+}
+
+.gap-2 {
+    gap: 0.5rem !important;
+}
+
+.gap-3 {
+    gap: 1rem !important;
+}
+
+.gap-4 {
+    gap: 1.5rem !important;
+}
+
+.gap-5 {
+    gap: 2rem !important;
+}
+
+.gap-6 {
+    gap: 3rem !important;
+}
+
+.gap-7 {
+    gap: 4rem !important;
+}
+
+.gap-8 {
+    gap: 5rem !important;
+}
+
+.align-items-center {
+    align-items: center !important;
+}
+
+.flex-row {
+    flex-direction: row !important;
+}
+
+.flex-row-reverse {
+    flex-direction: row-reverse !important;
+}
+
+.flex-column {
+    flex-direction: column !important;
+}
+
+.flex-column-reverse {
+    flex-direction: column-reverse !important;
+}
+
+@media screen and (min-width: 576px) {
+    .sm\:flex-row {
+        flex-direction: row !important;
+    }
+
+    .sm\:flex-row-reverse {
+        flex-direction: row-reverse !important;
+    }
+
+    .sm\:flex-column {
+        flex-direction: column !important;
+    }
+
+    .sm\:flex-column-reverse {
+        flex-direction: column-reverse !important;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .md\:flex-row {
+        flex-direction: row !important;
+    }
+
+    .md\:flex-row-reverse {
+        flex-direction: row-reverse !important;
+    }
+
+    .md\:flex-column {
+        flex-direction: column !important;
+    }
+
+    .md\:flex-column-reverse {
+        flex-direction: column-reverse !important;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .lg\:flex-row {
+        flex-direction: row !important;
+    }
+
+    .lg\:flex-row-reverse {
+        flex-direction: row-reverse !important;
+    }
+
+    .lg\:flex-column {
+        flex-direction: column !important;
+    }
+
+    .lg\:flex-column-reverse {
+        flex-direction: column-reverse !important;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .xl\:flex-row {
+        flex-direction: row !important;
+    }
+
+    .xl\:flex-row-reverse {
+        flex-direction: row-reverse !important;
+    }
+
+    .xl\:flex-column {
+        flex-direction: column !important;
+    }
+
+    .xl\:flex-column-reverse {
+        flex-direction: column-reverse !important;
+    }
+}
+
+/*@media (max-width: 430px) {*/
+
+/*  .table-cart__header {*/
+/*    display: none;*/
+/*  }*/
+/*  .cart-title,*/
+/*  .clear-cart {*/
+/*    display: inline-flex; !* Используем inline-flex, чтобы они оставались на одной строке *!*/
+/*     justify-content: space-between; !* Выравниваем по вертикали *!*/
+/*     max-width: 145px;*/
+/*  }*/
+
+/*  .clear-cart {*/
+/*    font-size: 14px;*/
+/*    color: #999;*/
+/*    text-decoration: none;*/
+/*    cursor: pointer;*/
+/*    padding: 5px 95px; !*добился расположения благодаря нему*!*/
+/*    white-space: nowrap; !* Запрещаем перенос текста *!*/
+/*  }*/
+
+/*  .cart-title {*/
+/*    font-size: 24px;*/
+/*    */
+/*  }*/
+/*.item-quantity::after {*/
+/*  content: "="; !* Добавляем знак = *!*/
+/*  display: inline-block;*/
+/* */
+/*  */
+/*  font-size: 12px; !* Размер знака *!*/
+/*  color: #333; !* Цвет знака *!*/
+/*  position: relative;*/
+/*}*/
+/*.item-quantity, .item-packs{*/
+/*  display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+/*    border: 2px solid #ddd;*/
+/*    border-radius: 6px;*/
+/*    padding: 5px;*/
+/*    max-width: 165px;*/
+/*}*/
+
+/*  body {*/
+/*      padding: 20px; !* Уменьшаем отступы для удобства *!*/
+/*  }*/
+
+/*  .cart {*/
+/*      max-width: 90%; !* Растягиваем корзину на весь экран *!*/
+/*      padding: 10px; !* Уменьшаем внутренние отступы *!*/
+/*      box-shadow: none; !* Убираем лишние тени для простоты *!*/
+/*  }*/
+/* */
+/*.cart-item {*/
+/*  display: flex;*/
+/*  flex-wrap: wrap; !* Разрешить перенос элементов на новую строку *!*/
+/*  gap: 10px; !* Расстояние между элементами *!*/
+/*  */
+/*  padding: 5px;*/
+/*}*/
+/*.cart-item .item-image {*/
+/*  display: flex;*/
+/*  flex-direction: column;*/
+/*  align-items: flex-start;*/
+/* */
+/*}*/
+
+/*.cart-item .item-image img {*/
+/*  max-width: 100%; !* Сделать изображение адаптивным *!*/
+/*  height: auto;*/
+/*}*/
+/*.item-details h3 {*/
+/*  font-size: 16px;*/
+/*  margin-bottom: 5px;*/
+/*  text-align: justify; !* Выравнивание текста по ширине *!*/
+/*}*/
+
+/*!*сделать отдельно*!*/
+
+
+/*.cart-item .remove-item {*/
+/*  font-size: 31px;*/
+/*  display: flex;*/
+/*  justify-content: right; !* Выравнивание элементов по центру *!*/
+/*  align-items: right;*/
+/*  text-align: right;*/
+/*  */
+/*}*/
+/*.cart-item .item-total{*/
+/*  display: flex;*/
+/*  justify-content: left; !* Выравнивание элементов по центру *!*/
+/*}*/
+/*.cart-item .item-price{*/
+/*  flex: 1 1 100%; !* Все остальные элементы занимают всю строку *!*/
+/*  display: flex;*/
+/*  justify-content: left; !* Выравнивание элементов по центру *!*/
+/*  margin-bottom: 10px;*/
+/*}*/
+/*.cart-item .item-controls {*/
+/*  display: flex;*/
+/*  flex-direction: row;*/
+/*  align-items: center; !* Выравнивание по вертикали *!*/
+/*  justify-content: center; !* Центрирование содержимого по горизонтали *!*/
+/*  gap: 10px; !* Расстояние между кнопками *!*/
+/*  max-width: 100%; !* Запрещаем вылезать за пределы контейнера *!*/
+/*  box-sizing: border-box; !* Учитываем отступы и границы в общей ширине *!*/
+/*  */
+/*}*/
+/*!* Упорядочиваем элементы *!*/
+/*.cart-item .item-image {*/
+/*  order: 1; !* Первыми отображаются изображения *!*/
+/*}*/
+
+/*.cart-item .item-details {*/
+/*   */
+/*  order: 2; !* Затем детали *!*/
+/*}*/
+
+/*.cart-item .item-price {*/
+/*  order: 3; !* Цена идет на новой строке *!*/
+/*}*/
+
+/*.cart-item .item-controls {*/
+/*  order: 4; !* Управление количеством ниже *!*/
+/*}*/
+
+/*.cart-item .item-total {*/
+/*  order: 5; !* Итоговая сумма *!*/
+/*}*/
+
+/*.cart-item .remove-item {*/
+/*  order: 2; !* Кнопка удаления в самом низу *!*/
+/*}*/
+/*.delivery-note {*/
+/*  font-size: 12px;*/
+/*  color: #666;*/
+/*  margin-bottom: 15px;*/
+/*  */
+/*    font-size: 12px;*/
+/*    color: #666;*/
+/*    margin-bottom: 15px;*/
+/*    max-width: 150px; !* Устанавливаем максимальную ширину блока *!*/
+/*    line-height: 1.5; !* Делаем строки более читаемыми *!*/
+/*    word-wrap: break-word; !* Разрешаем перенос слов, если они слишком длинные *!*/
+/*    text-align: left; !* Текст выравнивается по левому краю *!*/
+/*    */
+/*    */
+/*   */
+
+/*}*/
+/*.summary-row {*/
+/*  display: flex;*/
+/*  flex-direction: row;*/
+/*  text-align: start; !* Центрируем текст *!*/
+/*  font-size: 1rem; !* Уменьшаем общий размер текста *!*/
+/*  gap: 9.3rem; !* Добавляем отступы между строками *!*/
+/*  margin-bottom: 10px;*/
+/*  position: relative;*/
+/*  white-space: nowrap; !* Запрещаем перенос текста *!*/
+/*}*/
+
+/*.total-price {*/
+/*  text-align: end; !* Центрируем текст *!*/
+/*  font-size: 18px; !* Выделяем текст суммы *!*/
+/*  margin-right: 10px;*/
+/*  white-space: nowrap; !* Запрещаем перенос текста на новую строку *!*/
+/*  min-width: 100px; !* Устанавливаем минимальную ширину для предотвращения сдвига *!*/
+/*  */
+/*}*/
+
+/*  .checkout-btn {*/
+/*      width: 100%; !* Кнопка на всю ширину *!*/
+/*      font-size: 1rem;*/
+/*      padding: 10px;*/
+/*      */
+/*      justify-content: center;*/
+/*      text-align: center;*/
+/*      background-color: #000;*/
+/*      color: #fff;*/
+/*  }*/
+
+/*  .checkout-btn:hover {*/
+/*      background-color: #444; !* Легкое изменение фона при наведении *!*/
+/*  }*/
+/*}*/
+
+
+/*@media (max-width: 390px){*/
+
+/*  .table-cart__header {*/
+/*    display: none;*/
+/*  }*/
+/*  !* Оба элемента становятся flex-контейнерами *!*/
+/*  .cart-title,*/
+/*  .clear-cart {*/
+/*    display: inline-flex; !* Используем inline-flex, чтобы они оставались на одной строке *!*/
+/*     justify-content: space-between; !* Выравниваем по вертикали *!*/
+/*     max-width: 145px;*/
+/*  }*/
+
+/*  .clear-cart {*/
+/*    font-size: 14px;*/
+/*    color: #999;*/
+/*    text-decoration: none;*/
+/*    cursor: pointer;*/
+/*    padding: 5px 70px; !*добился расположения благодаря нему*!*/
+/*    white-space: nowrap; !* Запрещаем перенос текста *!*/
+/*  }*/
+
+/*  .cart-title {*/
+/*    font-size: 24px;*/
+/*    flex-grow: 1000px; !* Даем .cart-title больше пространства, оно будет тянуться влево *!*/
+/*  }*/
+
+/*.cart {*/
+/*  max-width: 90%; !* Растягиваем корзину на весь экран *!*/
+/*  padding: 10px; !* Уменьшаем внутренние отступы *!*/
+/*  box-shadow: none; !* Убираем лишние тени для простоты *!*/
+/*}*/
+/*.item-quantity::after {*/
+/*  content: "="; !* Добавляем знак = *!*/
+/*  display: inline-block;*/
+/* */
+/*  font-size: 12px; !* Размер знака *!*/
+/*  color: #333; !* Цвет знака *!*/
+/*  position: relative;*/
+/*}*/
+/*.item-quantity, .item-packs{*/
+/*  display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+/*    border: 2px solid #ddd;*/
+/*    border-radius: 6px;*/
+/*    padding: 5px;*/
+/*    max-width: 145px;*/
+/*}*/
+/*button.quantity-btn {*/
+/*  all: unset;*/
+/*  !* cursor: pointer; *!*/
+/*  padding: 0 15px;*/
+/*  font-size: 18px;*/
+/*  text-align: center;*/
+/*}*/
+/*  body {*/
+/*      padding: 20px; !* Уменьшаем отступы для удобства *!*/
+/*  }*/
+
+/* */
+/* */
+/*.cart-item {*/
+/*  display: flex;*/
+/*  flex-wrap: wrap; !* Разрешить перенос элементов на новую строку *!*/
+/*  gap: 10px; !* Расстояние между элементами *!*/
+/*  */
+/*  padding: 5px;*/
+/*}*/
+/*.cart-item .item-image {*/
+/*  display: flex;*/
+/*  flex-direction: column;*/
+/*  align-items: flex-start;*/
+/* */
+/*}*/
+
+/*.cart-item .item-image img {*/
+/*  max-width: 100%; !* Сделать изображение адаптивным *!*/
+/*  height: auto;*/
+/*}*/
+/*.item-details h3 {*/
+/*  font-size: 16px;*/
+/*  margin-bottom: 5px;*/
+/*  text-align: justify; !* Выравнивание текста по ширине *!*/
+/*}*/
+
+/*!*сделать отдельно*!*/
+
+
+/*.cart-item .remove-item {*/
+/*  font-size: 31px;*/
+/*  display: flex;*/
+/*  justify-content: right; !* Выравнивание элементов по центру *!*/
+/*  align-items: right;*/
+/*  text-align: right;*/
+/*  */
+/*}*/
+/*.cart-item .item-total{*/
+/*  display: flex;*/
+/*  justify-content: left; !* Выравнивание элементов по центру *!*/
+/*}*/
+/*.cart-item .item-price{*/
+/*  flex: 1 1 100%; !* Все остальные элементы занимают всю строку *!*/
+/*  display: flex;*/
+/*  justify-content: left; !* Выравнивание элементов по центру *!*/
+/*  margin-bottom: 10px;*/
+/*}*/
+/*.cart-item .item-controls {*/
+/*  display: flex;*/
+/*  flex-direction: row;*/
+/*  align-items: center; !* Выравнивание по вертикали *!*/
+/*  justify-content: center; !* Центрирование содержимого по горизонтали *!*/
+/*  gap: 10px; !* Расстояние между кнопками *!*/
+/*  max-width: 100%; !* Запрещаем вылезать за пределы контейнера *!*/
+/*  box-sizing: border-box; !* Учитываем отступы и границы в общей ширине *!*/
+/*  */
+/*}*/
+/*!* Упорядочиваем элементы *!*/
+/*.cart-item .item-image {*/
+/*  order: 1; !* Первыми отображаются изображения *!*/
+/*}*/
+
+/*.cart-item .item-details {*/
+/*   */
+/*  order: 2; !* Затем детали *!*/
+/*}*/
+
+/*.cart-item .item-price {*/
+/*  order: 3; !* Цена идет на новой строке *!*/
+/*}*/
+
+/*.cart-item .item-controls {*/
+/*  order: 4; !* Управление количеством ниже *!*/
+/*}*/
+
+/*.cart-item .item-total {*/
+/*  order: 5; !* Итоговая сумма *!*/
+/*}*/
+
+/*.cart-item .remove-item {*/
+/*  order: 2; !* Кнопка удаления в самом низу *!*/
+/*}*/
+/*.delivery-note {*/
+/*  font-size: 12px;*/
+/*  color: #666;*/
+/*  margin-bottom: 15px;*/
+/*  */
+/*    font-size: 12px;*/
+/*    color: #666;*/
+/*    margin-bottom: 15px;*/
+/*    max-width: 150px; !* Устанавливаем максимальную ширину блока *!*/
+/*    line-height: 1.5; !* Делаем строки более читаемыми *!*/
+/*    word-wrap: break-word; !* Разрешаем перенос слов, если они слишком длинные *!*/
+/*    text-align: left; !* Текст выравнивается по левому краю *!*/
+/*    */
+/*    */
+/*   */
+
+/*}*/
+/*.summary-row {*/
+/*  display: flex;*/
+/*  flex-direction: row;*/
+/*  text-align: start; !* Центрируем текст *!*/
+/*  font-size: 1rem; !* Уменьшаем общий размер текста *!*/
+/*  gap: 7rem; !* Добавляем отступы между строками *!*/
+/*  margin-bottom: 10px;*/
+/*  position: relative;*/
+/*  white-space: nowrap; !* Запрещаем перенос текста *!*/
+/*}*/
+
+/*.total-price {*/
+/*  text-align: end; !* Центрируем текст *!*/
+/*  font-size: 18px; !* Выделяем текст суммы *!*/
+/*  margin-right: 10px;*/
+/*  white-space: nowrap; !* Запрещаем перенос текста на новую строку *!*/
+/*  min-width: 100px; !* Устанавливаем минимальную ширину для предотвращения сдвига *!*/
+/*  */
+/*}*/
+
+/*  .checkout-btn {*/
+/*      width: 100%; !* Кнопка на всю ширину *!*/
+/*      font-size: 1rem;*/
+/*      padding: 10px;*/
+/*      */
+/*      justify-content: center;*/
+/*      text-align: center;*/
+/*      background-color: #000;*/
+/*      color: #fff;*/
+/*  }*/
+
+/*  .checkout-btn:hover {*/
+/*      background-color: #444; !* Легкое изменение фона при наведении *!*/
+/*  }*/
+/*}*/
+
+

@@ -7,29 +7,43 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <div class="cart">
-        <h1 class="cart-title">Корзина</h1>
+<div class="cart">
+    <div class="title">
+        <h1 class="cart-title">КОРЗИНА</h1>
         <a href="#" class="clear-cart" onclick="clearCart()">Очистить корзину</a>
-        <div class="table-cart__header table-cart__item">
-            <div class="table-cart__item-product-info">Товар</div>
-            <div class="table-cart__item-square-price">Цена</div>
+    </div>
+    <div class="table-cart__header table-cart__item">
+        <div class="table-cart__item-product-info">Товар</div>
+        <div class="table-cart__item-square-price">Цена</div>
+        <div class="table-cart__item-calctable-cart__item-total flex gap-5">
             <div class="table-cart__item-calc">Количество</div>
             <div class="table-cart__item-total">Сумма</div>
         </div>
-        <!-- Список товаров -->
-        <div id="cart-items">
-            <div class="cart-item">
+        <div class="table-cart__item-remove"></div>
+    </div>
+    <!-- Список товаров -->
+    <div id="cart-items">
+        <div class="cart-item">
+            <div class="item-image-details xl:gap-5">
                 <div class="item-image">
-                    <img src="https://via.placeholder.com/100" alt="SPC ЛАМИНАТ ROYCE EMOTION ДУБ ГУСТО EM-604">
+                    <!--                    <img src="https://via.placeholder.com/100" alt="SPC ЛАМИНАТ ROYCE EMOTION ДУБ ГУСТО EM-604">-->
+                    <img src="https://cdn3.pixelcut.app/7/20/uncrop_hero_bdf08a8ca6.jpg"
+                         alt="SPC ЛАМИНАТ ROYCE SENSE ДУБ АЙА SE-710">
                 </div>
                 <div class="item-details">
-                    <h3>SPC ЛАМИНАТ ROYCE EMOTION ДУБ ГУСТО EM-604</h3>
-                    <p>42 класс 4 мм</p>
+                    <h3>SPC ЛАМИН ROYCE EMOTION ДУБ ГУСТО EM-604</h3>
+                    <p class="sec-color">42 класс 4 мм</p>
+                    <div class="item-price hidden sm:block xl:hidden">
+                        <p>1790 ₽ <span class="sec-color line-through">2 170 ₽</span> / м²</p>
+                    </div>
                 </div>
-                <div class="item-price">
-                    <p>1790 ₽ / м²</p>
-                </div>
-                <div class="item-controls">
+                <button class="remove-item" onclick="removeItem(0)">×</button>
+            </div>
+            <div class="item-price sm:hidden xl:block">
+                <p>1790 ₽ <span class="sec-color line-through">2 170 ₽</span> / м²</p>
+            </div>
+            <div class="item-controlsitem-total flex flex-column sm:flex-row sm:align-items-center xl:align-items-start">
+                <div class="xl:flex-column item-controls">
                     <!-- Контейнер для изменения площади -->
                     <div class="item-quantity">
                         <button class="quantity-btn" onclick="updateQuantity(0, -1)">-</button>
@@ -37,7 +51,7 @@
                         <span class="unit">м²</span>
                         <button class="quantity-btn" onclick="updateQuantity(0, 1)">+</button>
                     </div>
-                    
+                    <span class="sec-color sm:hidden">=</span>
                     <!-- Контейнер для изменения упаковок -->
                     <div class="item-packs">
                         <button class="quantity-btn" onclick="updatePacks(0, -1)">-</button>
@@ -46,60 +60,30 @@
                         <button class="quantity-btn" onclick="updatePacks(0, 1)">+</button>
                     </div>
                 </div>
-                <div class="item-total">
+                <div class="item-total sm:flex-column sm:gap-0">
                     <p>1790 ₽</p>
-                </div>
-                <button class="remove-item" onclick="removeItem(0)">×</button>
-            </div>
-
-            <div class="cart-item">
-                <div class="item-image">
-                    <img src="https://via.placeholder.com/100" alt="SPC ЛАМИНАТ ROYCE SENSE ДУБ АЙА SE-710">
-                </div>
-                <div class="item-details">
-                    <h3>SPC ЛАМИНАТ ROYCE SENSE ДУБ АЙА SE-710</h3>
-                    <p>42 класс 4 мм</p>
-                </div>
-                <div class="item-price">
-                    <p>1620 ₽ / м²</p>
-                </div>
-                <div class="item-controls">
-                    <!-- Контейнер для изменения площади -->
-                    <div class="item-quantity">
-                        <button class="quantity-btn" onclick="updateQuantity(1, -1)">-</button>
-                        <input type="text" value="2.32" disabled>
-                        <span class="unit">м²</span>
-                        <button class="quantity-btn" onclick="updateQuantity(1, 1)">+</button>
+                    <div class="flex align-items-center gap-2">
+                        <span class="sec-color line-through">1790 ₽</span>
+                        <div class="sale">
+                            -17%
+                        </div>
                     </div>
-                    
-                    <!-- Контейнер для изменения упаковок -->
-                    <div class="item-packs">
-                        <button class="quantity-btn" onclick="updatePacks(1, -1)">-</button>
-                        <input type="text" value="1 ." disabled>
-                        <span class="unit">уп.</span>
-                        <button class="quantity-btn" onclick="updatePacks(1, 1)">+</button>
-                    </div>
-                </div>
-                
-                <div class="item-total">
-                    <p>1620 ₽</p>
-                </div>
-                <button class="remove-item" onclick="removeItem(1)">×</button>
-            </div>
-        </div>
 
-        <div class="cart-summary-wrapper">
-            <div class="cart-summary">
-                <div class="summary-row">
-                    <p class="total-label">ИТОГО</p>
-                    <p class="total-price" id="total-price">3440 ₽</p>
                 </div>
-                <p class="delivery-note">Без учёта стоимости доставки</p>
-                <button class="checkout-btn">Перейти к оформлению</button>
             </div>
+            <button class="remove-item hidden xl:block" onclick="removeItem(0)">×</button>
         </div>
     </div>
+    <div class="cart-summary-wrapper">
+        <div class="summary-row">
+            <p class="total-label">ИТОГО</p>
+            <p class="total-price" id="total-price">3440 ₽</p>
+        </div>
+        <p class="delivery-note sec-color">Без учёта стоимости доставки</p>
+        <button class="checkout-btn">Перейти к оформлению</button>
+    </div>
+</div>
 
-    <script src="./js/script.js"></script>
+<script src="./js/script.js"></script>
 </body>
 </html>
