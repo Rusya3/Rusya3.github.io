@@ -575,7 +575,7 @@ input[disabled] {
 }
 
 .table-cart__item-remove{
-    width: 10px;
+    width: 25px;
 }
 
 .table-cart__item-calctable-cart__item-total{
@@ -775,7 +775,7 @@ input[disabled] {
 
     .table-cart__header {
         display: flex; /* Используем grid для гибкости */
-        gap: 1rem; /* Отступ между колонками */
+        gap: 0rem; /* Отступ между колонками */
         font-size: 21px;
         margin-bottom: 35px;
     }
