@@ -248,10 +248,136 @@ body {
     color: #000;
     line-height: 1.5;
 }
-
+.modal.no-scroll {
+    overflow: hidden;
+}
 .cart {
     margin: 0 auto;
     padding: 20px;
+}
+.success-message {
+    position: fixed;
+    top: 20px; /* Отступ сверху */
+    right: 20px; /* Отступ справа */
+    background-color: #d4edda;
+    color: #155724;
+    padding: 15px 20px;
+    border: 1px solid #c3e6cb;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Поверх всех элементов */
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Расстояние между иконкой и текстом */
+}
+
+.success-message i {
+    font-size: 18px; /* Размер иконки */
+}
+
+@keyframes fade-out {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+/* Стили для затемнения фона */
+.modal {
+    display: none; /* Скрыто по умолчанию */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный черный фон */
+    overflow: auto; /* Позволяет прокручивать содержимое, если оно большое */
+}
+
+/* Контейнер для содержимого модального окна */
+.modal-content {
+    position: relative;
+    background-color: #fff; /* Белый фон */
+    margin: 3% auto; /* Центровка по вертикали и горизонтали */
+    padding: 20px; /* Отступы внутри окна */
+    border-radius: 8px; /* Скругленные углы */
+    width: 50%; /* Ширина окна */
+    max-width: 600px; /* Максимальная ширина */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Тень */
+    animation: fadeIn 0.3s ease-in-out; /* Плавное появление */
+}
+
+/* Анимация появления окна */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Кнопка закрытия */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: #aaa; /* Серый цвет */
+    font-size: 24px; /* Размер */
+    font-weight: bold; /* Жирный текст */
+    cursor: pointer; /* Указатель мыши */
+    transition: color 0.2s; /* Плавный переход цвета */
+}
+
+.close:hover,
+.close:focus {
+    color: #000; /* Черный при наведении */
+}
+
+/* Стили для формы */
+.modal-content form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Расстояние между полями */
+    padding-top: 20px;
+}
+
+.modal-content label {
+    font-weight: bold; /* Жирный текст */
+    color: #333; /* Темно-серый цвет */
+}
+
+.modal-content input,
+.modal-content textarea,
+.modal-content button {
+    padding: 10px; /* Внутренние отступы */
+    border: 1px solid #ccc; /* Серые границы */
+    border-radius: 5px; /* Скругленные углы */
+    font-size: 16px; /* Размер текста */
+}
+
+.modal-content input:focus,
+.modal-content textarea:focus {
+    border-color: #007BFF; /* Синий цвет при фокусе */
+    outline: none; /* Убираем обводку */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Тень при фокусе */
+}
+
+.modal-content button {
+    background-color: #007BFF; /* Синий фон */
+    color: #fff; /* Белый текст */
+    border: none; /* Без границ */
+    cursor: pointer; /* Указатель мыши */
+    transition: background-color 0.3s; /* Плавный переход цвета */
+}
+
+.modal-content button:hover {
+    background-color: #0056b3; /* Более темный синий при наведении */
 }
 
 .cart-title {
@@ -266,7 +392,6 @@ body {
     cursor: pointer;
     text-align: right;
 }
-
 
 .cart-item {
     display: flex;
@@ -558,20 +683,74 @@ input[disabled] {
 }
 
 .table-cart__header .table-cart__item-product-info {
-    width: 60%;
-    text-align: left; /* Выравнивание текста по левому краю */
+    width: 47%;
+    text-align: left;
 }
 
 .table-cart__header .table-cart__item-square-price {
-    width: 20%;
+    width: 18%;
 }
 
 .table-cart__header .table-cart__item-calc {
     width: 40%;
 }
 
+.admin-button{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.admin-button button{
+    border: 4px rgb(81, 162, 255) solid;
+    background-color: white;
+    padding: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: row ;
+    gap: 10px;
+    justify-content: space-between;
+}
+.logout-link {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #ff5c5c;
+    color: #fff;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    text-decoration: none; 
+    display: inline-block;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.logout-link:hover {
+    background-color: #e53e3e; 
+    transform: scale(1.05); 
+}
+
+.logout-link:active {
+    background-color: #c0392b; 
+}
+.admin-button .deleteButton{
+    border: 4px rgb(255, 89, 89) solid;
+}
+.admin-button .deleteButton svg{
+    fill:rgb(255, 89, 89);
+}
+.admin-button button svg{
+    width: 20px;
+    height: 20px;
+    fill: rgb(81, 162, 255);
+}
+.admin-button button:hover{
+    transform: scale(1.010);
+}
 .table-cart__header .table-cart__item-total {
-    width: 40%;
+    width: 39%;
 }
 
 .table-cart__item-remove{
@@ -592,6 +771,9 @@ input[disabled] {
 .remove-item2 {
     display: none;
 }
+
+
+
 
 @media (min-width: 576px) {
     .item-image img {
@@ -626,7 +808,7 @@ input[disabled] {
     }
 
     .item-controlsitem-total{
-        gap: 2rem;
+        gap: 3rem;
     }
 
     .item-price p {
@@ -666,7 +848,12 @@ input[disabled] {
     body {
         margin: 20px;
     }
-
+    .admin-button {
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        padding-top: 15px;
+    }
     .item-price p {
         font-size: 30px;
     }
@@ -706,7 +893,7 @@ input[disabled] {
 
     .item-image-details {
         margin-bottom: 0;
-        width: 60%;
+        width: 47%;
     }
 
     .clear-cart{
@@ -714,7 +901,7 @@ input[disabled] {
     }
 
     .item-price {
-        width: 20%;
+        width: 18%;
     }
 
     .total-label, .total-price {
@@ -778,10 +965,24 @@ input[disabled] {
         gap: 0rem; /* Отступ между колонками */
         font-size: 21px;
         margin-bottom: 35px;
+       
+    } 
+    .item-total {
+        font-size: 34px;
+    }
+    .item-quantity, .item-packs {
+        width: 150px;
     }
 }
 
-
+@media (min-width: 1400px) {
+    .item-total {
+        font-size: 38px;
+    }
+    .item-quantity, .item-packs {
+        width: 200px;
+    }
+}
 .hidden {
     display: none !important;
 }
@@ -888,7 +1089,11 @@ input[disabled] {
     .xl\:hidden {
         display: none !important;
     }
-
+    .admin-button {
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+    }
     .xl\:block {
         display: block !important;
     }
@@ -931,7 +1136,7 @@ input[disabled] {
 }
 
 .gap-5 {
-    gap: 2rem !important;
+    gap: 3rem !important;
 }
 
 .gap-6 {
@@ -1036,389 +1241,10 @@ input[disabled] {
     .xl\:flex-column-reverse {
         flex-direction: column-reverse !important;
     }
+    .admin-button {
+        display: flex
+    ;
+        flex-direction: row;
+        gap: 15px;
+    }
 }
-
-/*@media (max-width: 430px) {*/
-
-/*  .table-cart__header {*/
-/*    display: none;*/
-/*  }*/
-/*  .cart-title,*/
-/*  .clear-cart {*/
-/*    display: inline-flex; !* Используем inline-flex, чтобы они оставались на одной строке *!*/
-/*     justify-content: space-between; !* Выравниваем по вертикали *!*/
-/*     max-width: 145px;*/
-/*  }*/
-
-/*  .clear-cart {*/
-/*    font-size: 14px;*/
-/*    color: #999;*/
-/*    text-decoration: none;*/
-/*    cursor: pointer;*/
-/*    padding: 5px 95px; !*добился расположения благодаря нему*!*/
-/*    white-space: nowrap; !* Запрещаем перенос текста *!*/
-/*  }*/
-
-/*  .cart-title {*/
-/*    font-size: 24px;*/
-/*    */
-/*  }*/
-/*.item-quantity::after {*/
-/*  content: "="; !* Добавляем знак = *!*/
-/*  display: inline-block;*/
-/* */
-/*  */
-/*  font-size: 12px; !* Размер знака *!*/
-/*  color: #333; !* Цвет знака *!*/
-/*  position: relative;*/
-/*}*/
-/*.item-quantity, .item-packs{*/
-/*  display: flex;*/
-/*    align-items: center;*/
-/*    justify-content: center;*/
-/*    border: 2px solid #ddd;*/
-/*    border-radius: 6px;*/
-/*    padding: 5px;*/
-/*    max-width: 165px;*/
-/*}*/
-
-/*  body {*/
-/*      padding: 20px; !* Уменьшаем отступы для удобства *!*/
-/*  }*/
-
-/*  .cart {*/
-/*      max-width: 90%; !* Растягиваем корзину на весь экран *!*/
-/*      padding: 10px; !* Уменьшаем внутренние отступы *!*/
-/*      box-shadow: none; !* Убираем лишние тени для простоты *!*/
-/*  }*/
-/* */
-/*.cart-item {*/
-/*  display: flex;*/
-/*  flex-wrap: wrap; !* Разрешить перенос элементов на новую строку *!*/
-/*  gap: 10px; !* Расстояние между элементами *!*/
-/*  */
-/*  padding: 5px;*/
-/*}*/
-/*.cart-item .item-image {*/
-/*  display: flex;*/
-/*  flex-direction: column;*/
-/*  align-items: flex-start;*/
-/* */
-/*}*/
-
-/*.cart-item .item-image img {*/
-/*  max-width: 100%; !* Сделать изображение адаптивным *!*/
-/*  height: auto;*/
-/*}*/
-/*.item-details h3 {*/
-/*  font-size: 16px;*/
-/*  margin-bottom: 5px;*/
-/*  text-align: justify; !* Выравнивание текста по ширине *!*/
-/*}*/
-
-/*!*сделать отдельно*!*/
-
-
-/*.cart-item .remove-item {*/
-/*  font-size: 31px;*/
-/*  display: flex;*/
-/*  justify-content: right; !* Выравнивание элементов по центру *!*/
-/*  align-items: right;*/
-/*  text-align: right;*/
-/*  */
-/*}*/
-/*.cart-item .item-total{*/
-/*  display: flex;*/
-/*  justify-content: left; !* Выравнивание элементов по центру *!*/
-/*}*/
-/*.cart-item .item-price{*/
-/*  flex: 1 1 100%; !* Все остальные элементы занимают всю строку *!*/
-/*  display: flex;*/
-/*  justify-content: left; !* Выравнивание элементов по центру *!*/
-/*  margin-bottom: 10px;*/
-/*}*/
-/*.cart-item .item-controls {*/
-/*  display: flex;*/
-/*  flex-direction: row;*/
-/*  align-items: center; !* Выравнивание по вертикали *!*/
-/*  justify-content: center; !* Центрирование содержимого по горизонтали *!*/
-/*  gap: 10px; !* Расстояние между кнопками *!*/
-/*  max-width: 100%; !* Запрещаем вылезать за пределы контейнера *!*/
-/*  box-sizing: border-box; !* Учитываем отступы и границы в общей ширине *!*/
-/*  */
-/*}*/
-/*!* Упорядочиваем элементы *!*/
-/*.cart-item .item-image {*/
-/*  order: 1; !* Первыми отображаются изображения *!*/
-/*}*/
-
-/*.cart-item .item-details {*/
-/*   */
-/*  order: 2; !* Затем детали *!*/
-/*}*/
-
-/*.cart-item .item-price {*/
-/*  order: 3; !* Цена идет на новой строке *!*/
-/*}*/
-
-/*.cart-item .item-controls {*/
-/*  order: 4; !* Управление количеством ниже *!*/
-/*}*/
-
-/*.cart-item .item-total {*/
-/*  order: 5; !* Итоговая сумма *!*/
-/*}*/
-
-/*.cart-item .remove-item {*/
-/*  order: 2; !* Кнопка удаления в самом низу *!*/
-/*}*/
-/*.delivery-note {*/
-/*  font-size: 12px;*/
-/*  color: #666;*/
-/*  margin-bottom: 15px;*/
-/*  */
-/*    font-size: 12px;*/
-/*    color: #666;*/
-/*    margin-bottom: 15px;*/
-/*    max-width: 150px; !* Устанавливаем максимальную ширину блока *!*/
-/*    line-height: 1.5; !* Делаем строки более читаемыми *!*/
-/*    word-wrap: break-word; !* Разрешаем перенос слов, если они слишком длинные *!*/
-/*    text-align: left; !* Текст выравнивается по левому краю *!*/
-/*    */
-/*    */
-/*   */
-
-/*}*/
-/*.summary-row {*/
-/*  display: flex;*/
-/*  flex-direction: row;*/
-/*  text-align: start; !* Центрируем текст *!*/
-/*  font-size: 1rem; !* Уменьшаем общий размер текста *!*/
-/*  gap: 9.3rem; !* Добавляем отступы между строками *!*/
-/*  margin-bottom: 10px;*/
-/*  position: relative;*/
-/*  white-space: nowrap; !* Запрещаем перенос текста *!*/
-/*}*/
-
-/*.total-price {*/
-/*  text-align: end; !* Центрируем текст *!*/
-/*  font-size: 18px; !* Выделяем текст суммы *!*/
-/*  margin-right: 10px;*/
-/*  white-space: nowrap; !* Запрещаем перенос текста на новую строку *!*/
-/*  min-width: 100px; !* Устанавливаем минимальную ширину для предотвращения сдвига *!*/
-/*  */
-/*}*/
-
-/*  .checkout-btn {*/
-/*      width: 100%; !* Кнопка на всю ширину *!*/
-/*      font-size: 1rem;*/
-/*      padding: 10px;*/
-/*      */
-/*      justify-content: center;*/
-/*      text-align: center;*/
-/*      background-color: #000;*/
-/*      color: #fff;*/
-/*  }*/
-
-/*  .checkout-btn:hover {*/
-/*      background-color: #444; !* Легкое изменение фона при наведении *!*/
-/*  }*/
-/*}*/
-
-
-/*@media (max-width: 390px){*/
-
-/*  .table-cart__header {*/
-/*    display: none;*/
-/*  }*/
-/*  !* Оба элемента становятся flex-контейнерами *!*/
-/*  .cart-title,*/
-/*  .clear-cart {*/
-/*    display: inline-flex; !* Используем inline-flex, чтобы они оставались на одной строке *!*/
-/*     justify-content: space-between; !* Выравниваем по вертикали *!*/
-/*     max-width: 145px;*/
-/*  }*/
-
-/*  .clear-cart {*/
-/*    font-size: 14px;*/
-/*    color: #999;*/
-/*    text-decoration: none;*/
-/*    cursor: pointer;*/
-/*    padding: 5px 70px; !*добился расположения благодаря нему*!*/
-/*    white-space: nowrap; !* Запрещаем перенос текста *!*/
-/*  }*/
-
-/*  .cart-title {*/
-/*    font-size: 24px;*/
-/*    flex-grow: 1000px; !* Даем .cart-title больше пространства, оно будет тянуться влево *!*/
-/*  }*/
-
-/*.cart {*/
-/*  max-width: 90%; !* Растягиваем корзину на весь экран *!*/
-/*  padding: 10px; !* Уменьшаем внутренние отступы *!*/
-/*  box-shadow: none; !* Убираем лишние тени для простоты *!*/
-/*}*/
-/*.item-quantity::after {*/
-/*  content: "="; !* Добавляем знак = *!*/
-/*  display: inline-block;*/
-/* */
-/*  font-size: 12px; !* Размер знака *!*/
-/*  color: #333; !* Цвет знака *!*/
-/*  position: relative;*/
-/*}*/
-/*.item-quantity, .item-packs{*/
-/*  display: flex;*/
-/*    align-items: center;*/
-/*    justify-content: center;*/
-/*    border: 2px solid #ddd;*/
-/*    border-radius: 6px;*/
-/*    padding: 5px;*/
-/*    max-width: 145px;*/
-/*}*/
-/*button.quantity-btn {*/
-/*  all: unset;*/
-/*  !* cursor: pointer; *!*/
-/*  padding: 0 15px;*/
-/*  font-size: 18px;*/
-/*  text-align: center;*/
-/*}*/
-/*  body {*/
-/*      padding: 20px; !* Уменьшаем отступы для удобства *!*/
-/*  }*/
-
-/* */
-/* */
-/*.cart-item {*/
-/*  display: flex;*/
-/*  flex-wrap: wrap; !* Разрешить перенос элементов на новую строку *!*/
-/*  gap: 10px; !* Расстояние между элементами *!*/
-/*  */
-/*  padding: 5px;*/
-/*}*/
-/*.cart-item .item-image {*/
-/*  display: flex;*/
-/*  flex-direction: column;*/
-/*  align-items: flex-start;*/
-/* */
-/*}*/
-
-/*.cart-item .item-image img {*/
-/*  max-width: 100%; !* Сделать изображение адаптивным *!*/
-/*  height: auto;*/
-/*}*/
-/*.item-details h3 {*/
-/*  font-size: 16px;*/
-/*  margin-bottom: 5px;*/
-/*  text-align: justify; !* Выравнивание текста по ширине *!*/
-/*}*/
-
-/*!*сделать отдельно*!*/
-
-
-/*.cart-item .remove-item {*/
-/*  font-size: 31px;*/
-/*  display: flex;*/
-/*  justify-content: right; !* Выравнивание элементов по центру *!*/
-/*  align-items: right;*/
-/*  text-align: right;*/
-/*  */
-/*}*/
-/*.cart-item .item-total{*/
-/*  display: flex;*/
-/*  justify-content: left; !* Выравнивание элементов по центру *!*/
-/*}*/
-/*.cart-item .item-price{*/
-/*  flex: 1 1 100%; !* Все остальные элементы занимают всю строку *!*/
-/*  display: flex;*/
-/*  justify-content: left; !* Выравнивание элементов по центру *!*/
-/*  margin-bottom: 10px;*/
-/*}*/
-/*.cart-item .item-controls {*/
-/*  display: flex;*/
-/*  flex-direction: row;*/
-/*  align-items: center; !* Выравнивание по вертикали *!*/
-/*  justify-content: center; !* Центрирование содержимого по горизонтали *!*/
-/*  gap: 10px; !* Расстояние между кнопками *!*/
-/*  max-width: 100%; !* Запрещаем вылезать за пределы контейнера *!*/
-/*  box-sizing: border-box; !* Учитываем отступы и границы в общей ширине *!*/
-/*  */
-/*}*/
-/*!* Упорядочиваем элементы *!*/
-/*.cart-item .item-image {*/
-/*  order: 1; !* Первыми отображаются изображения *!*/
-/*}*/
-
-/*.cart-item .item-details {*/
-/*   */
-/*  order: 2; !* Затем детали *!*/
-/*}*/
-
-/*.cart-item .item-price {*/
-/*  order: 3; !* Цена идет на новой строке *!*/
-/*}*/
-
-/*.cart-item .item-controls {*/
-/*  order: 4; !* Управление количеством ниже *!*/
-/*}*/
-
-/*.cart-item .item-total {*/
-/*  order: 5; !* Итоговая сумма *!*/
-/*}*/
-
-/*.cart-item .remove-item {*/
-/*  order: 2; !* Кнопка удаления в самом низу *!*/
-/*}*/
-/*.delivery-note {*/
-/*  font-size: 12px;*/
-/*  color: #666;*/
-/*  margin-bottom: 15px;*/
-/*  */
-/*    font-size: 12px;*/
-/*    color: #666;*/
-/*    margin-bottom: 15px;*/
-/*    max-width: 150px; !* Устанавливаем максимальную ширину блока *!*/
-/*    line-height: 1.5; !* Делаем строки более читаемыми *!*/
-/*    word-wrap: break-word; !* Разрешаем перенос слов, если они слишком длинные *!*/
-/*    text-align: left; !* Текст выравнивается по левому краю *!*/
-/*    */
-/*    */
-/*   */
-
-/*}*/
-/*.summary-row {*/
-/*  display: flex;*/
-/*  flex-direction: row;*/
-/*  text-align: start; !* Центрируем текст *!*/
-/*  font-size: 1rem; !* Уменьшаем общий размер текста *!*/
-/*  gap: 7rem; !* Добавляем отступы между строками *!*/
-/*  margin-bottom: 10px;*/
-/*  position: relative;*/
-/*  white-space: nowrap; !* Запрещаем перенос текста *!*/
-/*}*/
-
-/*.total-price {*/
-/*  text-align: end; !* Центрируем текст *!*/
-/*  font-size: 18px; !* Выделяем текст суммы *!*/
-/*  margin-right: 10px;*/
-/*  white-space: nowrap; !* Запрещаем перенос текста на новую строку *!*/
-/*  min-width: 100px; !* Устанавливаем минимальную ширину для предотвращения сдвига *!*/
-/*  */
-/*}*/
-
-/*  .checkout-btn {*/
-/*      width: 100%; !* Кнопка на всю ширину *!*/
-/*      font-size: 1rem;*/
-/*      padding: 10px;*/
-/*      */
-/*      justify-content: center;*/
-/*      text-align: center;*/
-/*      background-color: #000;*/
-/*      color: #fff;*/
-/*  }*/
-
-/*  .checkout-btn:hover {*/
-/*      background-color: #444; !* Легкое изменение фона при наведении *!*/
-/*  }*/
-/*}*/
-
-
