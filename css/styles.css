@@ -893,7 +893,7 @@ input[disabled] {
 
     .item-image-details {
         margin-bottom: 0;
-        width: 52%;
+        width: 47%;
     }
 
     .clear-cart{
@@ -901,7 +901,7 @@ input[disabled] {
     }
 
     .item-price {
-        width: 23%;
+        width: 18%;
     }
 
     .total-label, .total-price {
